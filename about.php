@@ -1,201 +1,28 @@
 <?php include 'layouts/head.php'; ?>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 <link rel="stylesheet" href="assets/css/typing-animation.css">
+<link rel="stylesheet" href="assets/css/about.css">
 <style>
-    body
-    {
-        background: white !important;
-    }
-    :root {
-        --color-text: black;
-        --color-bg: papayawhip;
-        --color-bg-accent: #ecdcc0;
-        --size: clamp(10rem, 1rem + 40vmin, 30rem);
-        --gap: calc(var(--size) / 14);
-        --duration: 60s;
-        --scroll-start: 0;
-        --scroll-end: calc(-100% - var(--gap));
-    }
-
-    @media (prefers-color-scheme: dark) {
-        :root {
-            --color-text: papayawhip;
-            --color-bg: navy;
-            --color-bg-accent: #2626a0;
-        }
-    }
-
-    .marquee {
-        display: flex;
-        overflow: hidden;
-        user-select: none;
-        gap: var(--gap);
-        mask-image: linear-gradient(
-                var(--mask-direction, to right),
-                hsl(0 0% 0% / 0),
-                hsl(0 0% 0% / 1) 20%,
-                hsl(0 0% 0% / 1) 80%,
-                hsl(0 0% 0% / 0)
-        );
-    }
-
-    .marquee__group {
-        flex-shrink: 0;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        gap: var(--gap);
-        min-width: 100%;
-        animation: scroll-x var(--duration) linear infinite;
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-        .marquee__group {
-            animation-play-state: paused;
-        }
-    }
-
-    .marquee--vertical {
-        --mask-direction: to bottom;
-    }
-
-    .marquee--vertical,
-    .marquee--vertical .marquee__group {
-        flex-direction: column;
-    }
-
-    .marquee--vertical .marquee__group {
-        animation-name: scroll-y;
-    }
-
-    .marquee--reverse .marquee__group {
-        animation-direction: reverse;
-        animation-delay: -3s;
-    }
-
-    @keyframes scroll-x {
-        from {
-            transform: translateX(var(--scroll-start));
-        }
-        to {
-            transform: translateX(var(--scroll-end));
-        }
-    }
-
-    @keyframes scroll-y {
-        from {
-            transform: translateY(var(--scroll-start));
-        }
-        to {
-            transform: translateY(var(--scroll-end));
-        }
-    }
-
-    /* Element styles */
-    .marquee svg {
-        display: grid;
-        place-items: center;
-        width: var(--size);
-        fill: var(--color-text);
-        background: var(--color-bg-accent);
-        aspect-ratio: 16/9;
-        padding: calc(var(--size) / 10);
-        border-radius: 0.5rem;
-    }
-
-    .marquee--vertical svg {
-        aspect-ratio: 1;
-        width: calc(var(--size) / 1.5);
-        padding: calc(var(--size) / 6);
-    }
-
-    /* Parent wrapper */
-    .wrapper {
-        display: flex;
-        flex-direction: column;
-        gap: var(--gap);
-        margin: auto;
-        max-width: 100vw;
-    }
-
-    .wrapper--vertical {
-        flex-direction: row;
-        height: 100vh;
-    }
-
-    /* Toggle direction button */
-    .toggle {
-        --size: 3rem;
-        position: relative;
-        position: fixed;
-        top: 1rem;
-        left: 1rem;
-        width: var(--size);
-        height: var(--size);
-        font: inherit;
-        text-align: center;
-        cursor: pointer;
-        outline: none;
-        border: none;
-        border-radius: 50%;
-        color: inherit;
-        background-color: var(--color-bg-accent);
-        z-index: 1;
-    }
-
-    .toggle:focus-visible {
-        box-shadow: 0 0 0 2px var(--color-text);
-    }
-
-    .toggle span {
-        position: absolute;
-        display: inline-block;
-        top: 50%;
-        left: calc(100% + 0.4em);
-        width: fit-content;
-        white-space: nowrap;
-        transform: translateY(-50%);
-        animation: fade 400ms 4s ease-out forwards;
-        user-select: none;
-    }
-
-    .toggle svg {
-        --size: 1.5rem;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: var(--size);
-        height: var(--size);
-        fill: currentcolor;
-        transform: translate(-50%, -50%);
-        transition: transform 300ms cubic-bezier(0.25, 1, 0.5, 1);
-    }
-
-    .toggle--vertical svg {
-        transform: translate(-50%, -50%) rotate(-90deg);
-    }
-
-    @keyframes fade {
-        to {
-            opacity: 0;
-            visibility: hidden;
-        }
-    }
 
 </style>
 <body>
 <?php include 'layouts/header.php'; ?>
 
-<section  class="theme-container bg-white d-flex">
+<section  class="theme-container p-md d-flex" style="height: 1200px">
     <div class="container-fluid px-0 mx-0">
-        <div class="row " style="margin: 18% 0 18% 0;" >
-            <div class="col-md-6 col-lg-6 col-sm-12 px-0 mx-0" >
-                <p class="w-100 text-black fn-title-font py-0 my-0">We make World-Class</p>
+        <div class="row " style="margin: 20% 0 15% 0;" >
+            <div class="col-md-10 col-sm-12 pl-0 py-3 scroll-inner-text-box"
+                 style="height: 150px;overflow: hidden;position: fixed;" >
+                <p style="color: black;" class="scroll-text1 w-100 fn-title-font scroll-text-spacing">Where Magic Meets Branding</p>
+<!--                <p style="color: black;opacity: 0;" class="scroll-text2 w-100 fn-title-font scroll-text-spacing">We're not just your average branding agency.</p>-->
+<!--                <p style="color: black;opacity: 0;" class="scroll-text3 w-100 fn-title-font scroll-text-spacing">A bunch of creative minds, armed with the power of strategy and a knack for artistic flair, coming together to weave brand stories that leave everyone swooning.</p>-->
             </div>
         </div>
+
     </div>
 </section>
 <section class="theme-container mt-5">
-    <h4 style="font-size: 26px">The Most Trusted Branding Agency</h4>
+    <h4 data-aos="fade-up" data-aos-duration="1500" class="fs-26px">The Most Trusted Branding Agency</h4>
 </section>
 <div class="container-fluid">
     <div class="row mt-5">
@@ -311,6 +138,62 @@
                     </svg>
                 </div>
             </div>
+
+            <div class="marquee">
+                <div class="marquee__group">
+                    <svg>
+                        <use xlink:href="#mcdonalds" />
+                    </svg>
+                    <svg>
+                        <use xlink:href="#jordan" />
+                    </svg>
+                    <svg>
+                        <use xlink:href="#aws" />
+                    </svg>
+                    <svg>
+                        <use xlink:href="#spotify" />
+                    </svg>
+                    <svg>
+                        <use xlink:href="#burger-king" />
+                    </svg>
+                    <svg>
+                        <use xlink:href="#honda" />
+                    </svg>
+                    <svg>
+                        <use xlink:href="#notion" />
+                    </svg>
+                    <svg>
+                        <use xlink:href="#hulu" />
+                    </svg>
+                </div>
+
+                <div aria-hidden="true" class="marquee__group">
+                    <svg>
+                        <use xlink:href="#mcdonalds" />
+                    </svg>
+                    <svg>
+                        <use xlink:href="#jordan" />
+                    </svg>
+                    <svg>
+                        <use xlink:href="#aws" />
+                    </svg>
+                    <svg>
+                        <use xlink:href="#spotify" />
+                    </svg>
+                    <svg>
+                        <use xlink:href="#burger-king" />
+                    </svg>
+                    <svg>
+                        <use xlink:href="#honda" />
+                    </svg>
+                    <svg>
+                        <use xlink:href="#notion" />
+                    </svg>
+                    <svg>
+                        <use xlink:href="#hulu" />
+                    </svg>
+                </div>
+            </div>
         </article>
         <svg style="display: none" xmlns="http://www.w3.org/2000/svg">
             <defs>
@@ -350,12 +233,100 @@
     </div>
 </div>
 
+<section class="theme-container " style="padding-top: 20%; ">
+    <p data-aos="fade-up" data-aos-duration="1500" class="fn-title-font ">Why Future Now ?</p>
+    <h4 data-aos="fade-up" data-aos-duration="1500" class="fs-26px">Because We’re Simply Awesome!</h4>
+    <div class="row" style="margin: 0 0 300px 0;">
+        <div data-aos="fade-up" data-aos-duration="1500" class="col-sm-12 my-4 px-0 mx-0">
+            <div class="expend-div expend1 border-bottom-white">
+                <a href="javascript:void(0)" class="row p-0 expend-click-1 " onclick="toggleOnOffBtn(1,'add');">
+                    <div class="col-1" >
+                        <span class="mt-icon-position fs-26px  mt-2 text-white material-symbols-rounded expend-icon-1">add</span>
+                    </div>
+                    <div class="col-11">
+                        <p class="fs-26px w-100">Your Brand, Your Rules:</p>
+                        <div data-id="expend1" style="transition: 1s;" class="expend-text1 d-none expend-div my-3 text-white opacity-75">
+                            We get it – your brand is as unique as your favorite emoji combo. Our squad of branding wizards cooks up personalized strategies that blend seamlessly with your brand's vibe.
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
 
+        <div data-aos="fade-up" data-aos-duration="1500" class="col-sm-12 my-4 px-0 mx-0">
+            <div class="expend-div expend2 border-bottom-white">
+                <a href="javascript:void(0)" class="row p-0 expend-click-2 " onclick="toggleOnOffBtn(2,'add');">
+                    <div class="col-1" >
+                        <span class="mt-icon-position fs-26px  mt-2 text-white material-symbols-rounded expend-icon-2">add</span>
+                    </div>
+                    <div class="col-11">
+                        <p class="fs-26px w-100">Stand Out, Don't Blend In:</p>
+                        <div data-id="expend2" style="transition: 1s;" class="expend-text2 d-none expend-div my-3 text-white opacity-75">
+                            We're not about blending in; we're all about helping you strut your stuff with confidence. We dive deep into market trends, sprinkle some fairy dust, and voilà – your brand is ready to steal the spotlight!</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div data-aos="fade-up" data-aos-duration="1500" class="col-sm-12 my-4 px-0 mx-0">
+            <div class="expend-div expend3 border-bottom-white">
+                <a href="javascript:void(0)" class="row p-0 expend-click-3 " onclick="toggleOnOffBtn(3,'add');">
+                    <div class="col-1" >
+                        <span class="mt-icon-position fs-26px  mt-2 text-white material-symbols-rounded expend-icon-3">add</span>
+                    </div>
+                    <div class="col-11">
+                        <p class="fs-26px w-100">Creativity Unleashed:</p>
+                        <div data-id="expend3" style="transition: 1s;" class="expend-text3 d-none expend-div my-3 text-white opacity-75">
+                            Anyone can make a logo, but we? We're like the fairy godparents of design, whipping up eye-catching visuals and words that pack a punch. Our designers, writers, and strategy gurus are the dream team you never knew you needed.
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div data-aos="fade-up" data-aos-duration="1500" class="col-sm-12 my-4 px-0 mx-0">
+            <div class="expend-div expend4 border-bottom-white">
+                <a href="javascript:void(0)" class="row p-0 expend-click-4 " onclick="toggleOnOffBtn(4,'add');">
+                    <div class="col-1" >
+                        <span class="mt-icon-position fs-26px  mt-2 text-white material-symbols-rounded expend-icon-4">add</span>
+                    </div>
+                    <div class="col-11">
+                        <p class="fs-26px w-100">One-Stop Brand Fiesta: </p>
+                        <div data-id="expend4" style="transition: 1s;" class="expend-text4 d-none expend-div my-3 text-white opacity-75">
+                            From brainstorming wild ideas to putting the finishing touches on your website – we've got it all covered. Our buffet of services ensures your brand gets a taste of everything it needs to shine.
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div data-aos="fade-up" data-aos-duration="1500" class="col-sm-12 my-4 px-0 mx-0">
+            <div class="expend-div expend5 border-bottom-white">
+                <a href="javascript:void(0)" class="row p-0 expend-click-5" onclick="toggleOnOffBtn(5,'add');">
+                    <div class="col-1" >
+                        <span class="mt-icon-position fs-26px  mt-2 text-white material-symbols-rounded expend-icon-5">add</span>
+                    </div>
+                    <div class="col-11">
+                        <p class="fs-26px w-100">It's You, It's Us:</p>
+                        <div data-id="expend5" style="transition: 1s;" class="expend-text5 d-none expend-div my-3 text-white opacity-75">
+                            We're not just here to deliver fancy stuff and disappear. We're in this together, and we're all ears when it comes to your ideas, dreams, and desires.
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+</section>
 <section class="theme-container mt-5">
     <p data-aos="fade-up" data-aos-duration="1500" class="text-center animatable fadeInUp" style="margin: 100px 0 270px 0; text-decoration: underline;">
         <a class="text-white fn-paragraph-font " href="">Explore our works</a>
     </p>
 </section>
+
+<div class="bottom-fixed d-none">
+    0
+</div>
 
 <?php include 'layouts/footer.php'; ?>
 <!--<script src="--><?php //echo $domainUrl; ?><!--/assets/js/count-down.min.js" ></script>-->
@@ -369,18 +340,83 @@
 
     });
 
- // JS to toggle scroll axis styles
- //    const control = document.getElementById("direction-toggle");
- //    const marquees = document.querySelectorAll(".marquee");
- //    const wrapper = document.querySelector(".wrapper");
- //
- //    control.addEventListener("click", () => {
- //        control.classList.toggle("toggle--vertical");
- //        wrapper.classList.toggle("wrapper--vertical");
- //        [...marquees].forEach((marquee) =>
- //            marquee.classList.toggle("marquee--vertical")
- //        );
- //    });
+    const toggleOnOffBtn = (id,whichOne) =>
+    {
+        console.log(id + whichOne);
+        if (whichOne == 'remove')
+        {
+            $(`.expend-text${id}`).addClass('d-none').fadeIn(1000);
+            $(`.expend-click-${id}`).attr("onclick",`toggleOnOffBtn(${id},'add')`);
+            $(`.expend-icon-${id}`).html("add");
+            console.log('add mal');
+        }else {
+            $(`.expend-text${id}`).removeClass('d-none').fadeIn(1000);
+            $(`.expend-click-${id}`).attr("onclick",`toggleOnOffBtn(${id},'remove')`);
+            $(`.expend-icon-${id}`).html("remove");
+        }
+    }
+
+    $('body').attr("style","");
+
+    const getOpacityFun = () =>
+    {
+
+    }
+
+    const updateScroll = () =>
+    {
+        let scrollLocation = $(window).scrollTop();
+        let limit = 300;  /* scrolltop value when opacity should be 0 */
+        let scrollLocationCeil = Math.ceil(scrollLocation);
+        $('.bottom-fixed').html(scrollLocationCeil);
+        let secondUp = scrollLocationCeil + 15;
+        let thirdUp = secondUp - 300;
+        // let fourthUp = thirdUp + 20;
+        // console.log(scrollLocationCeil + '- ' + secondUp + '- ' + thirdUp);
+
+        if (scrollLocationCeil <= 300 )
+        {
+            // console.log(1 - scrollLocationCeil/limit)
+        }
+
+        let firstOp = (1 - scrollLocationCeil/limit);
+        let secondOp = (2 - scrollLocationCeil/300);
+
+        if (scrollLocationCeil <= 650)
+        {
+            $('.scroll-inner-text-box').css('position','fixed');
+            $('body').attr("style","background-color: white !important;transition: background-color 3s ease !important");
+            $('.marquee svg').css({"background": "black","fill":"black","color":"black !important"});
+            $('h4').removeClass('text-white');
+            $('h4').addClass('text-black');
+
+            // $('.scroll-text1').css({"transform": `translateY(${-scrollLocationCeil}%)`}); // scroll up
+            $('.scroll-text1').css({"opacity": firstOp});
+            // $('.scroll-text2').css({"transform": `translateY(${-secondUp}%)`});
+            if (firstOp<=0)
+            {
+                // $('.scroll-text2').css({"opacity": (2 - scrollLocationCeil/300)});
+                $('.scroll-text1').html("We're not just your average branding agency.").fadeIn(1000);
+                $('.scroll-text1').css({"opacity": secondOp});
+            }else if (scrollLocationCeil <= 300){
+                $('.scroll-text1').html("Where Magic Meets Branding").fadeIn(1000);
+                $('.scroll-text1').css({"opacity": firstOp});
+                if (firstOp <= 0.3)
+                {
+                    $('.scroll-text1').css({"transform": `translateY(${(190-scrollLocationCeil)}%)`});
+                }
+            }
+
+        }else{
+            $('.scroll-inner-text-box').css('position','static');
+            $('body').attr("style","background-color: black !important;transition: background-color 3s ease !important;");
+            $('.marquee svg').css({"background": "white","fill":"none","color":"black !important"});
+            $('h4').addClass('text-white');
+        }
+
+    }
+
+    $(window).on('scroll', updateScroll);
 
 </script>
 

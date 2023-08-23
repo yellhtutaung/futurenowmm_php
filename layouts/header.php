@@ -10,14 +10,14 @@
                 </a>
             </li>
             <li class="hide-mobile nav-list hover-about" onmouseenter="enterMouse('about');" onmouseleave="leaveMouse('about')">
-                <a class="text-white" href="about.php">About</a>
+                <a class="text-white" href="<?php echo $domainUrl; ?>/about.php">About</a>
                 <ul class="d-none sub-nav sub-hover-about  h-auto float-left ">
                     <li class="mb-3"><a class="text-white text-right" href="">Helping Brands</a></li>
                     <li><a class="text-white float-right" href="">Since 2018</a></li>
                 </ul>
             </li>
             <li class="hide-mobile nav-list hover-works " onmouseenter="enterMouse('works');" onmouseleave="leaveMouse('works')">
-                <a href="works.php" class="text-white" href="">Works</a>
+                <a href="<?php echo $domainUrl; ?>/works.php" class="text-white" href="">Works</a>
                 <ul class="d-none sub-nav sub-hover-works  h-auto ">
                     <li class="mb-3"><a class="text-white text-right-right" href="">Explore our stunning</a></li>
                     <li><a class="text-white float-right" href="">latest projects</a></li>
@@ -60,9 +60,10 @@
 
 <div id="navbar_overlay" class="overlay" style="height: 0%;" >
     <div class="overlay-content">
-        <a href="<?php $domainUrl;?>"><p class="hambager-menu-text text-white" >Home</p></a>
-        <a href="contact.php"><p class="hambager-menu-text text-white">Contact Us </p></a>
-        <a href="works.php"><p class="hambager-menu-text text-white">Works</p></a>
+        <a href="<?php echo $domainUrl;?>"><p class="hambager-menu-text text-white" >Home</p></a>
+        <a href="<?php echo $domainUrl;?>/about.php"><p class="hambager-menu-text text-white" >About</p></a>
+        <a href="<?php echo $domainUrl;?>/works.php"><p class="hambager-menu-text text-white">Works</p></a>
+        <a href="<?php echo $domainUrl;?>/contact.php"><p class="hambager-menu-text text-white">Contact Us </p></a>
     </div>
     <div href="javascript:void(0) " onclick="overlayClose()" class="closebtn text-white p-0">
         <span style="font-size: 70px;" class="text-white material-symbols-rounded">close</span>
