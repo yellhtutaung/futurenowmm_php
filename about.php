@@ -8,12 +8,12 @@
 <body>
 <?php include 'layouts/header.php'; ?>
 
-<section  class="theme-container p-md d-flex" style="height: 1200px">
+<section  class="theme-container p-md d-flex" style="height: 1800px">
     <div class="container-fluid px-0 mx-0">
-        <div class="row " style="margin: 20% 0 15% 0;" >
+        <div class="row " style="margin: 15% 0 15% 0;" >
             <div class="col-md-10 col-sm-12 pl-0 py-3 scroll-inner-text-box"
-                 style="height: 150px;overflow: hidden;position: fixed;" >
-                <p style="color: black;" class="scroll-text1 w-100 fn-title-font scroll-text-spacing">Where Magic Meets Branding</p>
+                 style="height: 250px;overflow: hidden;position: fixed;" >
+                <p style="color: black;" class="animate__animated scroll-text1 w-100 fn-title-font scroll-text-spacing">Where Magic Meets Branding</p>
 <!--                <p style="color: black;opacity: 0;" class="scroll-text2 w-100 fn-title-font scroll-text-spacing">We're not just your average branding agency.</p>-->
 <!--                <p style="color: black;opacity: 0;" class="scroll-text3 w-100 fn-title-font scroll-text-spacing">A bunch of creative minds, armed with the power of strategy and a knack for artistic flair, coming together to weave brand stories that leave everyone swooning.</p>-->
             </div>
@@ -54,7 +54,6 @@
                         <use xlink:href="#hulu" />
                     </svg>
                 </div>
-
                 <div aria-hidden="true" class="marquee__group">
                     <svg>
                         <use xlink:href="#mcdonalds" />
@@ -198,7 +197,8 @@
         <svg style="display: none" xmlns="http://www.w3.org/2000/svg">
             <defs>
                 <symbol id="mcdonalds" viewBox="0 0 24 24">
-                    <path d="M17.243 3.006c2.066 0 3.742 8.714 3.742 19.478H24c0-11.588-3.042-20.968-6.766-20.968-2.127 0-4.007 2.81-5.248 7.227-1.241-4.416-3.121-7.227-5.231-7.227C3.031 1.516 0 10.888 0 22.476h3.014c0-10.763 1.658-19.47 3.724-19.47 2.066 0 3.741 8.05 3.741 17.98h2.997c0-9.93 1.684-17.98 3.75-17.98Z" />
+<!--                    <path d="M17.243 3.006c2.066 0 3.742 8.714 3.742 19.478H24c0-11.588-3.042-20.968-6.766-20.968-2.127 0-4.007 2.81-5.248 7.227-1.241-4.416-3.121-7.227-5.231-7.227C3.031 1.516 0 10.888 0 22.476h3.014c0-10.763 1.658-19.47 3.724-19.47 2.066 0 3.741 8.05 3.741 17.98h2.997c0-9.93 1.684-17.98 3.75-17.98Z" />-->
+                    <path d="M 4 8 L 10 1 L 13 0 L 12 3 L 5 9 C 6 10 6 11 7 10 C 7 11 8 12 7 12 A 1.42 1.42 0 0 1 6 13 A 5 5 0 0 0 4 10 Q 3.5 9.9 3.5 10.5 T 2 11.8 T 1.2 11 T 2.5 9.5 T 3 9 A 5 5 90 0 0 0 7 A 1.42 1.42 0 0 1 1 6 C 1 5 2 6 3 6 C 2 7 3 7 4 8 M 10 1 L 8 5 L 12 3 L 10.2 2.8 L 10 1" />
                 </symbol>
 
                 <symbol id="jordan" viewBox="0 0 24 24">
@@ -324,7 +324,7 @@
     </p>
 </section>
 
-<div class="bottom-fixed d-none">
+<div class="bottom-fixed ">
     0
 </div>
 
@@ -366,47 +366,52 @@
     const updateScroll = () =>
     {
         let scrollLocation = $(window).scrollTop();
-        let limit = 300;  /* scrolltop value when opacity should be 0 */
+        let limit = 150;  /* scrolltop value when opacity should be 0 */
         let scrollLocationCeil = Math.ceil(scrollLocation);
-        $('.bottom-fixed').html(scrollLocationCeil);
-        let secondUp = scrollLocationCeil + 15;
-        let thirdUp = secondUp - 300;
-        // let fourthUp = thirdUp + 20;
-        // console.log(scrollLocationCeil + '- ' + secondUp + '- ' + thirdUp);
 
-        if (scrollLocationCeil <= 300 )
+        let modulestOf =  scrollLocationCeil/limit;
+        let firstOp = 0;
+        if (modulestOf <= 1 )
         {
-            // console.log(1 - scrollLocationCeil/limit)
+            firstOp = (1 - modulestOf);
+        }else {
+            firstOp = 1;
         }
+        console.log(firstOp);
 
-        let firstOp = (1 - scrollLocationCeil/limit);
-        let secondOp = (2 - scrollLocationCeil/300);
 
-        if (scrollLocationCeil <= 650)
+        // if (scrollLocationCeil >= 150 && scrollLocationCeil <= 300)
+        // {
+        //     let secondOp = (1 - scrollLocationCeil/limit);
+        //     console.log('second op ->' + secondOp);
+        // }
+
+        // $('.scroll-text1').css({"transform": `translateY(${-scrollLocationCeil}%)`}); // scroll up
+        // $('.scroll-text1').css({"opacity": firstOp});
+        // $('.scroll-text2').css({"transform": `translateY(${-secondUp}%)`});
+        // if (firstOp<=0)
+        // {
+        //     // $('.scroll-text2').css({"opacity": (2 - scrollLocationCeil/300)});
+        //     $('.scroll-text1').html("We're not just your average branding agency.").fadeIn(1000);
+        //     $('.scroll-text1').css({"opacity": secondOp});
+        // }else if (scrollLocationCeil <= 300){
+        //     $('.scroll-text1').html("Where Magic Meets Branding").fadeIn(1000);
+        //     $('.scroll-text1').css({"opacity": firstOp});
+        //     if (firstOp <= 0.3)
+        //     {
+        //         $('.scroll-text1').css({"transform": `translateY(${(100-scrollLocationCeil)}%)`});
+        //     }
+        // }
+
+        calibrateInScroll(scrollLocationCeil,50);
+
+        if (scrollLocationCeil <= 300)
         {
             $('.scroll-inner-text-box').css('position','fixed');
             $('body').attr("style","background-color: white !important;transition: background-color 3s ease !important");
             $('.marquee svg').css({"background": "black","fill":"black","color":"black !important"});
             $('h4').removeClass('text-white');
             $('h4').addClass('text-black');
-
-            // $('.scroll-text1').css({"transform": `translateY(${-scrollLocationCeil}%)`}); // scroll up
-            $('.scroll-text1').css({"opacity": firstOp});
-            // $('.scroll-text2').css({"transform": `translateY(${-secondUp}%)`});
-            if (firstOp<=0)
-            {
-                // $('.scroll-text2').css({"opacity": (2 - scrollLocationCeil/300)});
-                $('.scroll-text1').html("We're not just your average branding agency.").fadeIn(1000);
-                $('.scroll-text1').css({"opacity": secondOp});
-            }else if (scrollLocationCeil <= 300){
-                $('.scroll-text1').html("Where Magic Meets Branding").fadeIn(1000);
-                $('.scroll-text1').css({"opacity": firstOp});
-                if (firstOp <= 0.3)
-                {
-                    $('.scroll-text1').css({"transform": `translateY(${(190-scrollLocationCeil)}%)`});
-                }
-            }
-
         }else{
             $('.scroll-inner-text-box').css('position','static');
             $('body').attr("style","background-color: black !important;transition: background-color 3s ease !important;");
@@ -414,9 +419,35 @@
             $('h4').addClass('text-white');
         }
 
+        $('.bottom-fixed').html(scrollLocationCeil);
+
     }
 
     $(window).on('scroll', updateScroll);
+
+    const calibrateInScroll = (scrollVal,bufferLimit) =>
+    {
+        $('.scroll-text1').removeClass("animate__fadeIn");
+        let scrollStart = 0;
+        let scrollEnd = 0;
+        if (scrollVal >=0 && scrollVal <= bufferLimit)
+        {
+            $('.scroll-text1').html("Where Magic Meets Branding").fadeIn(2000);
+            // $('.scroll-text1').addClass("animate__fadeIn");
+        }else if (scrollVal >=bufferLimit && scrollVal <= ( bufferLimit * 2 ) )
+        {
+            $('.scroll-text1').addClass("animate__fadeIn");
+            $('.scroll-text1').text("We're not just your average branding agency.").fadeIn(2000);
+        }else if(scrollVal >= ( bufferLimit * 2 ) && scrollVal <= (bufferLimit * 3) )
+        {
+            $('.scroll-text1').addClass("animate__fadeIn");
+            $('.scroll-text1').html("Picture this.").fadeIn(2000);
+        }else if(scrollVal >= (bufferLimit * 3) )
+        {
+            $('.scroll-text1').addClass("animate__fadeIn");
+            $('.scroll-text1').html("A bunch of creative minds, armed with the power of strategy and a knack for artistic flair, coming together to weave brand stories that leave everyone swooning. ").fadeIn(2000);
+        }
+    }
 
 </script>
 

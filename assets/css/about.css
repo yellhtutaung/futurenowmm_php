@@ -38,7 +38,7 @@
     justify-content: space-around;
     gap: var(--gap);
     min-width: 100%;
-    animation: scroll-x var(--duration) linear infinite;
+    /*animation: scroll-x var(--duration) linear infinite;*/
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -220,4 +220,14 @@ body
 .fs-26px
 {
     font-size: 26px;
+}
+.partner-img-card
+{
+    width: 450px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border-radius: 20px !important;
 }
