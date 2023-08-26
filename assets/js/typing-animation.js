@@ -5,10 +5,11 @@
 
 // https://codepen.io/reymon359/pen/VJzyzL
 function typingEffect() {
-    const contactTexts = shuffleArray(['Digital Design',
+    const contactTexts = shuffleArray([
+        'Digital Marketing',
         'UI UX Design',
-        'Web development',
-        'Digital Marketing', 'Production']);
+        'Web Development',
+         'Video Production']);
     const typedtext = document.getElementsByClassName("typedtext")[0];
     let removing = false;
     let idx = char = 0;
