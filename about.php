@@ -358,17 +358,8 @@
 
     $('body').attr("style","");
 
-    const getOpacityFun = () =>
+    const getOpacityFun = (scrollLocationCeil,limit) =>
     {
-
-    }
-
-    const updateScroll = () =>
-    {
-        let scrollLocation = $(window).scrollTop();
-        let limit = 150;  /* scrolltop value when opacity should be 0 */
-        let scrollLocationCeil = Math.ceil(scrollLocation);
-
         let modulestOf =  scrollLocationCeil/limit;
         let firstOp = 0;
         if (modulestOf <= 1 )
@@ -377,14 +368,66 @@
         }else {
             firstOp = 1;
         }
-        console.log(firstOp);
+        return firstOp;
+    }
+
+    const placeInnerText = (scrollLocation,eachTextFadeLimit) =>
+    {
+        if (scrollLocation <= eachTextFadeLimit)
+        {
+            return 'Where Magic Meets Branding'
+        }else if (scrollLocation > eachTextFadeLimit && scrollLocation < eachTextFadeLimit * 2)
+        {
+            return "We're not just your average branding agency.";
+        }else if (scrollLocation >= eachTextFadeLimit * 2 && scrollLocation < eachTextFadeLimit * 3)
+        {
+            return "Picture this.";
+        }else if (scrollLocation >= eachTextFadeLimit * 3 && scrollLocation < eachTextFadeLimit * 4)
+        {
+            return "A bunch of creative minds, armed with the power of strategy and a knack for artistic flair, coming together to weave brand stories that leave everyone swooning.";
+        }else if (scrollLocation >= eachTextFadeLimit * 4 )
+        {
+            return "That's us, and we've been at it since 2018, turning brands into legends, one masterpiece at a time.";
+        }
+    }
+
+    const updateScroll = () =>
+    {
+        let scrollLocation = $(window).scrollTop();
+        let scrollLocationCeil = Math.ceil(scrollLocation);
+        let bgChangeHeight = 400;  /* scrolltop value when opacity should be 0 */
+        let finalScrollReducer = 0;
+
+        let eachTextFadeLimit = 100;
+        let innerText = placeInnerText(scrollLocation,eachTextFadeLimit);
+        let firstOpacity = getOpacityFun(scrollLocationCeil,eachTextFadeLimit);
+        if (scrollLocationCeil >= eachTextFadeLimit   )
+        {
+            if (scrollLocationCeil >= eachTextFadeLimit * 2 && scrollLocationCeil < eachTextFadeLimit * 3  ) // above 200
+            {
+                finalScrollReducer = scrollLocationCeil - eachTextFadeLimit * 2 ;
+            }else if (scrollLocationCeil >= eachTextFadeLimit * 3 && scrollLocationCeil < eachTextFadeLimit * 4 ) // above 300
+            {
+                finalScrollReducer = scrollLocationCeil - eachTextFadeLimit * 3 ;
+            }
+            else if (scrollLocationCeil >= eachTextFadeLimit * 4 && scrollLocationCeil < eachTextFadeLimit * 5  ) // above 400
+            {
+                finalScrollReducer = scrollLocationCeil - eachTextFadeLimit * 4 ;
+            }
+            else {
+                finalScrollReducer = scrollLocationCeil - eachTextFadeLimit;
+            }
+
+            scrollLocationCeil = finalScrollReducer;
+            firstOpacity = getOpacityFun(finalScrollReducer,eachTextFadeLimit);
+        }
 
 
-        // if (scrollLocationCeil >= 150 && scrollLocationCeil <= 300)
-        // {
-        //     let secondOp = (1 - scrollLocationCeil/limit);
-        //     console.log('second op ->' + secondOp);
-        // }
+        console.log(firstOpacity);
+        console.log(finalScrollReducer);
+        $('.scroll-text1').html(innerText);
+        $('.scroll-text1').css({"opacity": firstOpacity});
+
 
         // $('.scroll-text1').css({"transform": `translateY(${-scrollLocationCeil}%)`}); // scroll up
         // $('.scroll-text1').css({"opacity": firstOp});
@@ -403,7 +446,7 @@
         //     }
         // }
 
-        calibrateInScroll(scrollLocationCeil,50);
+        // calibrateInScroll(scrollLocationCeil,bgChangeHeight);
 
         if (scrollLocationCeil <= 300)
         {
@@ -419,7 +462,7 @@
             $('h4').addClass('text-white');
         }
 
-        $('.bottom-fixed').html(scrollLocationCeil);
+        $('.bottom-fixed').html(scrollLocation);
 
     }
 
