@@ -71,6 +71,10 @@ li
 {
     list-style-type: none !important;
 }
+.fs-20px
+{
+    font-size: 20px !important;
+}
 footer{
     height: 80px;
 }

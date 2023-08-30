@@ -2,54 +2,23 @@
 {
     width: 100%;
     height: 100vh; /* Set the initial height to the full viewport height */
-    background-image: url('../images/gallery/vector.png');
+    background-image: url('../images/gallery/white-team.png');
     background-size: cover;
-    background-position: center center;
+    /*background-position: center center;*/
     background-repeat: no-repeat;
-    transition: 3s;
+    /*transition: 3s;*/
 }
-/*.team-img{*/
-/*    width: 100%;*/
-/*    height: auto;*/
-/*    background-image: url('../images/gallery/vector.jpg');*/
-/*    background-size: contain;*/
-/*    background-position: center center;*/
-/*    background-repeat: no-repeat;*/
-/*    transition: 3s;*/
-/*}*/
-header
+.dark-theme
 {
-    background: initial; /* Or you can simply remove this line */
-    background: white;
-    top: 0;
-    position: static !important;
-}
-body{
-    background: initial !important;
-}
-.text-black
-{
-    color: black !important;
-}
-footer
-{
-    margin-top: 100px !important;
-}
-.bottom-fixed {
-    position: fixed;
-    bottom: 2%;
-    right: 2%;
-    font-size: 35px;
-    width: 80px;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    background-color: red;
+    background-color: black;
     color: white;
-
+    transition: background-color 1.5s ease-in;
 }
-
-
-
+body
+{
+    background: white !important;
+}
+.fs-26px
+{
+    font-size: 26px;
+}

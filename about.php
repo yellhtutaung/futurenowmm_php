@@ -3,16 +3,20 @@
 <link rel="stylesheet" href="assets/css/typing-animation.css">
 <link rel="stylesheet" href="assets/css/about.css">
 <style>
-
+    .text-div-control
+    {
+        overflow: hidden;
+        transition: 0.5s !important;
+    }
 </style>
 <body>
 <?php include 'layouts/header.php'; ?>
 
-<section  class="theme-container p-md d-flex" style="height: 1800px">
+<section  class="theme-container p-md d-flex" style="height: 2200px">
     <div class="container-fluid px-0 mx-0">
         <div class="row " style="margin: 15% 0 15% 0;" >
             <div class="col-md-10 col-sm-12 pl-0 py-3 scroll-inner-text-box"
-                 style="height: 250px;overflow: hidden;position: fixed;" >
+                 style="height: 300px;overflow: hidden;position: fixed;" >
                 <p style="color: black;" class="animate__animated scroll-text1 w-100 fn-title-font scroll-text-spacing">Where Magic Meets Branding</p>
 <!--                <p style="color: black;opacity: 0;" class="scroll-text2 w-100 fn-title-font scroll-text-spacing">We're not just your average branding agency.</p>-->
 <!--                <p style="color: black;opacity: 0;" class="scroll-text3 w-100 fn-title-font scroll-text-spacing">A bunch of creative minds, armed with the power of strategy and a knack for artistic flair, coming together to weave brand stories that leave everyone swooning.</p>-->
@@ -22,6 +26,7 @@
     </div>
 </section>
 <section class="theme-container mt-5">
+    <h4 data-aos="fade-up" data-aos-duration="1500" style="font-size: 50px">Partial Clients</h4>
     <h4 data-aos="fade-up" data-aos-duration="1500" class="fs-26px">The Most Trusted Branding Agency</h4>
 </section>
 <div class="container-fluid">
@@ -234,10 +239,10 @@
 </div>
 
 <section class="theme-container " style="padding-top: 20%; ">
-    <p data-aos="fade-up" data-aos-duration="1500" class="fn-title-font ">Why Future Now ?</p>
-    <h4 data-aos="fade-up" data-aos-duration="1500" class="fs-26px">Because We’re Simply Awesome!</h4>
-    <div class="row" style="margin: 0 0 300px 0;">
-        <div data-aos="fade-up" data-aos-duration="1500" class="col-sm-12 my-4 px-0 mx-0">
+    <p data-aos="fade-up" data-aos-duration="1500" class="fn-title-font text-black">Why Future Now ?</p>
+    <h4 data-aos="fade-up" data-aos-duration="1500"  class="fs-26px text-white">Because We’re Simply Awesome!</h4>
+    <div class="row" style="margin: 60px 0 300px 0;">
+        <div data-aos="fade-up" data-aos-duration="1500" class="col-sm-12 my-2 px-0 mx-0">
             <div class="expend-div expend1 border-bottom-white">
                 <a href="javascript:void(0)" class="row p-0 expend-click-1 " onclick="toggleOnOffBtn(1,'add');">
                     <div class="col-1" >
@@ -245,15 +250,17 @@
                     </div>
                     <div class="col-11">
                         <p class="fs-26px w-100">Your Brand, Your Rules:</p>
-                        <div data-id="expend1" style="transition: 1s;" class="expend-text1 d-none expend-div my-3 text-white opacity-75">
-                            We get it – your brand is as unique as your favorite emoji combo. Our squad of branding wizards cooks up personalized strategies that blend seamlessly with your brand's vibe.
+                        <div style="height: 0px;" class="text-div-control fs-20px expend-div1 ">
+                            <p class="expend-text1 w-75 text-white">
+                                We get it – your brand is as unique as your favorite emoji combo. Our squad of branding wizards cooks up personalized strategies that blend seamlessly with your brand's vibe.
+                            </p>
                         </div>
                     </div>
                 </a>
             </div>
         </div>
 
-        <div data-aos="fade-up" data-aos-duration="1500" class="col-sm-12 my-4 px-0 mx-0">
+        <div data-aos="fade-up" data-aos-duration="1500" class="col-sm-12 my-2 px-0 mx-0">
             <div class="expend-div expend2 border-bottom-white">
                 <a href="javascript:void(0)" class="row p-0 expend-click-2 " onclick="toggleOnOffBtn(2,'add');">
                     <div class="col-1" >
@@ -261,14 +268,17 @@
                     </div>
                     <div class="col-11">
                         <p class="fs-26px w-100">Stand Out, Don't Blend In:</p>
-                        <div data-id="expend2" style="transition: 1s;" class="expend-text2 d-none expend-div my-3 text-white opacity-75">
-                            We're not about blending in; we're all about helping you strut your stuff with confidence. We dive deep into market trends, sprinkle some fairy dust, and voilà – your brand is ready to steal the spotlight!</div>
+                        <div style="height: 0px;" class="text-div-control fs-20px expend-div2">
+                            <p class="expend-text2 w-75 text-white">
+                                We're not about blending in; we're all about helping you strut your stuff with confidence. We dive deep into market trends, sprinkle some fairy dust, and voilà – your brand is ready to steal the spotlight!
+                            </p>
+                        </div>
                     </div>
                 </a>
             </div>
         </div>
 
-        <div data-aos="fade-up" data-aos-duration="1500" class="col-sm-12 my-4 px-0 mx-0">
+        <div data-aos="fade-up" data-aos-duration="1500" class="col-sm-12 my-2 px-0 mx-0">
             <div class="expend-div expend3 border-bottom-white">
                 <a href="javascript:void(0)" class="row p-0 expend-click-3 " onclick="toggleOnOffBtn(3,'add');">
                     <div class="col-1" >
@@ -276,15 +286,17 @@
                     </div>
                     <div class="col-11">
                         <p class="fs-26px w-100">Creativity Unleashed:</p>
-                        <div data-id="expend3" style="transition: 1s;" class="expend-text3 d-none expend-div my-3 text-white opacity-75">
-                            Anyone can make a logo, but we? We're like the fairy godparents of design, whipping up eye-catching visuals and words that pack a punch. Our designers, writers, and strategy gurus are the dream team you never knew you needed.
+                        <div style="height: 0px;" class="text-div-control fs-20px expend-div3">
+                            <p class="expend-text2 w-75 text-white">
+                                Anyone can make a logo, but we? We're like the fairy godparents of design, whipping up eye-catching visuals and words that pack a punch. Our designers, writers, and strategy gurus are the dream team you never knew you needed.
+                            </p>
                         </div>
                     </div>
                 </a>
             </div>
         </div>
 
-        <div data-aos="fade-up" data-aos-duration="1500" class="col-sm-12 my-4 px-0 mx-0">
+        <div data-aos="fade-up" data-aos-duration="1500" class="col-sm-12 my-2 px-0 mx-0">
             <div class="expend-div expend4 border-bottom-white">
                 <a href="javascript:void(0)" class="row p-0 expend-click-4 " onclick="toggleOnOffBtn(4,'add');">
                     <div class="col-1" >
@@ -292,15 +304,17 @@
                     </div>
                     <div class="col-11">
                         <p class="fs-26px w-100">One-Stop Brand Fiesta: </p>
-                        <div data-id="expend4" style="transition: 1s;" class="expend-text4 d-none expend-div my-3 text-white opacity-75">
-                            From brainstorming wild ideas to putting the finishing touches on your website – we've got it all covered. Our buffet of services ensures your brand gets a taste of everything it needs to shine.
+                        <div style="height: 0px;" class="text-div-control fs-20px expend-div4">
+                            <p class="expend-text2 w-75 text-white">
+                                From brainstorming wild ideas to putting the finishing touches on your website – we've got it all covered. Our buffet of services ensures your brand gets a taste of everything it needs to shine.
+                            </p>
                         </div>
                     </div>
                 </a>
             </div>
         </div>
 
-        <div data-aos="fade-up" data-aos-duration="1500" class="col-sm-12 my-4 px-0 mx-0">
+        <div data-aos="fade-up" data-aos-duration="1500" class="col-sm-12 my-2 px-0 mx-0">
             <div class="expend-div expend5 border-bottom-white">
                 <a href="javascript:void(0)" class="row p-0 expend-click-5" onclick="toggleOnOffBtn(5,'add');">
                     <div class="col-1" >
@@ -308,8 +322,10 @@
                     </div>
                     <div class="col-11">
                         <p class="fs-26px w-100">It's You, It's Us:</p>
-                        <div data-id="expend5" style="transition: 1s;" class="expend-text5 d-none expend-div my-3 text-white opacity-75">
-                            We're not just here to deliver fancy stuff and disappear. We're in this together, and we're all ears when it comes to your ideas, dreams, and desires.
+                        <div style="height: 0px;" class="text-div-control fs-20px expend-div5">
+                            <p class="expend-text2 w-75 text-white">
+                                We're not just here to deliver fancy stuff and disappear. We're in this together, and we're all ears when it comes to your ideas, dreams, and desires.
+                            </p>
                         </div>
                     </div>
                 </a>
@@ -324,9 +340,9 @@
     </p>
 </section>
 
-<div class="bottom-fixed ">
-    0
-</div>
+<!--<div class="bottom-fixed ">-->
+<!--    0-->
+<!--</div>-->
 
 <?php include 'layouts/footer.php'; ?>
 <!--<script src="--><?php //echo $domainUrl; ?><!--/assets/js/count-down.min.js" ></script>-->
@@ -337,7 +353,10 @@
 <script>
 
     $(document).ready(function(){
-
+        $('header').css('background',"linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%)");
+        $('a').removeClass("text-white");
+        $('a').css("color","black");
+        $('.header-logo').attr("src","assets/images/logo/fn-logo-black.svg");
     });
 
     const toggleOnOffBtn = (id,whichOne) =>
@@ -345,14 +364,15 @@
         console.log(id + whichOne);
         if (whichOne == 'remove')
         {
-            $(`.expend-text${id}`).addClass('d-none').fadeIn(1000);
+            // $(`.expend-text${id}`).addClass('d-none').fadeIn(1000);
             $(`.expend-click-${id}`).attr("onclick",`toggleOnOffBtn(${id},'add')`);
             $(`.expend-icon-${id}`).html("add");
-            console.log('add mal');
+            $(`.expend-div${id}`).css("height","0px");
         }else {
-            $(`.expend-text${id}`).removeClass('d-none').fadeIn(1000);
+            // $(`.expend-div1${id}`).removeClass('d-none').fadeIn(1000);
             $(`.expend-click-${id}`).attr("onclick",`toggleOnOffBtn(${id},'remove')`);
             $(`.expend-icon-${id}`).html("remove");
+            $(`.expend-div${id}`).css("height","110px");
         }
     }
 
@@ -385,20 +405,25 @@
         }else if (scrollLocation >= eachTextFadeLimit * 3 && scrollLocation < eachTextFadeLimit * 4)
         {
             return "A bunch of creative minds, armed with the power of strategy and a knack for artistic flair, coming together to weave brand stories that leave everyone swooning.";
-        }else if (scrollLocation >= eachTextFadeLimit * 4 )
+        }else if (scrollLocation >= eachTextFadeLimit * 4 && scrollLocation < eachTextFadeLimit * 5 )
         {
             return "That's us, and we've been at it since 2018, turning brands into legends, one masterpiece at a time.";
+        }else {
+            return '';
         }
+
     }
 
     const updateScroll = () =>
     {
+        $('.scroll-text1').css({"transform": `translateY(${0}%)`});
+
         let scrollLocation = $(window).scrollTop();
         let scrollLocationCeil = Math.ceil(scrollLocation);
-        let bgChangeHeight = 400;  /* scrolltop value when opacity should be 0 */
+        let bgChangeHeight = 3100;  /* scrolltop value when opacity should be 0 */
         let finalScrollReducer = 0;
 
-        let eachTextFadeLimit = 100;
+        let eachTextFadeLimit = 300;
         let innerText = placeInnerText(scrollLocation,eachTextFadeLimit);
         let firstOpacity = getOpacityFun(scrollLocationCeil,eachTextFadeLimit);
         if (scrollLocationCeil >= eachTextFadeLimit   )
@@ -414,18 +439,28 @@
             {
                 finalScrollReducer = scrollLocationCeil - eachTextFadeLimit * 4 ;
             }
-            else {
+            else { // above 100
                 finalScrollReducer = scrollLocationCeil - eachTextFadeLimit;
+
             }
 
             scrollLocationCeil = finalScrollReducer;
             firstOpacity = getOpacityFun(finalScrollReducer,eachTextFadeLimit);
         }
 
+        if ( finalScrollReducer >= 250 )
+        {
+            console.log('up comming '+ finalScrollReducer);
+            if (firstOpacity )
+            {
+                $('.scroll-text1').css({"transform": `translateY(${250-finalScrollReducer}%)`});
+            }
+        }
+
 
         console.log(firstOpacity);
         console.log(finalScrollReducer);
-        $('.scroll-text1').html(innerText);
+        $('.scroll-text1').html(innerText).fadeIn("slow");
         $('.scroll-text1').css({"opacity": firstOpacity});
 
 
@@ -446,20 +481,41 @@
         //     }
         // }
 
-        // calibrateInScroll(scrollLocationCeil,bgChangeHeight);
 
-        if (scrollLocationCeil <= 300)
+        if (scrollLocation <= bgChangeHeight)
         {
             $('.scroll-inner-text-box').css('position','fixed');
-            $('body').attr("style","background-color: white !important;transition: background-color 3s ease !important");
-            $('.marquee svg').css({"background": "black","fill":"black","color":"black !important"});
+            $('body').attr("style","background-color: white !important;transition: background-color 2s ease !important");
+            $('.marquee svg').css({"background": "#B8C1D0","fill":"none","color":"black !important"});
             $('h4').removeClass('text-white');
             $('h4').addClass('text-black');
+            $('p').css("color","black");
+            $('.expend-div').removeClass("border-bottom-white");
+            $('.expend-div').addClass("border-bottom-black");
+            $('.material-symbols-rounded').removeClass("text-white");
+            $('.material-symbols-rounded').addClass("text-black");
+
+            $('header').css('background',"transparent");
+            $('a').css("color","black");
+            $('.header-logo').attr("src","assets/images/logo/fn-logo-black.svg");
+            $('header').css('background','linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%)');
         }else{
+            console.log('change bg ***');
             $('.scroll-inner-text-box').css('position','static');
-            $('body').attr("style","background-color: black !important;transition: background-color 3s ease !important;");
-            $('.marquee svg').css({"background": "white","fill":"none","color":"black !important"});
+            $('body').attr("style","background-color: black !important;transition: background-color 2s ease !important;");
+            $('.marquee svg').css({"background": "black","fill":"black","color":"black !important"});
+
             $('h4').addClass('text-white');
+            $('h4').removeClass('text-black');
+            $('p').css("color","white");
+            $('.expend-div').addClass("border-bottom-white");
+            $('.expend-div').removeClass("border-bottom-black");
+            $('.material-symbols-rounded').addClass("text-white");
+            $('.material-symbols-rounded').removeClass("text-black");
+
+            $('a').css("color","white");
+            $('.header-logo').attr("src","assets/images/logo/fn-logo.svg");
+            $('header').css('background',"linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.00) 100%)");
         }
 
         $('.bottom-fixed').html(scrollLocation);
@@ -467,30 +523,6 @@
     }
 
     $(window).on('scroll', updateScroll);
-
-    const calibrateInScroll = (scrollVal,bufferLimit) =>
-    {
-        $('.scroll-text1').removeClass("animate__fadeIn");
-        let scrollStart = 0;
-        let scrollEnd = 0;
-        if (scrollVal >=0 && scrollVal <= bufferLimit)
-        {
-            $('.scroll-text1').html("Where Magic Meets Branding").fadeIn(2000);
-            // $('.scroll-text1').addClass("animate__fadeIn");
-        }else if (scrollVal >=bufferLimit && scrollVal <= ( bufferLimit * 2 ) )
-        {
-            $('.scroll-text1').addClass("animate__fadeIn");
-            $('.scroll-text1').text("We're not just your average branding agency.").fadeIn(2000);
-        }else if(scrollVal >= ( bufferLimit * 2 ) && scrollVal <= (bufferLimit * 3) )
-        {
-            $('.scroll-text1').addClass("animate__fadeIn");
-            $('.scroll-text1').html("Picture this.").fadeIn(2000);
-        }else if(scrollVal >= (bufferLimit * 3) )
-        {
-            $('.scroll-text1').addClass("animate__fadeIn");
-            $('.scroll-text1').html("A bunch of creative minds, armed with the power of strategy and a knack for artistic flair, coming together to weave brand stories that leave everyone swooning. ").fadeIn(2000);
-        }
-    }
 
 </script>
 

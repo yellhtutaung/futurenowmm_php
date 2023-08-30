@@ -38,7 +38,7 @@
     justify-content: space-around;
     gap: var(--gap);
     min-width: 100%;
-    /*animation: scroll-x var(--duration) linear infinite;*/
+    animation: scroll-x var(--duration) linear infinite;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -216,6 +216,10 @@ body
 .border-bottom-white
 {
     border-bottom: 1px solid white;
+}
+.border-bottom-black
+{
+    border-bottom: 1px solid black;
 }
 .fs-26px
 {
