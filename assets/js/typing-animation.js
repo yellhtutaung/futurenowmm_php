@@ -4,12 +4,8 @@
  */
 
 // https://codepen.io/reymon359/pen/VJzyzL
-function typingEffect() {
-    const contactTexts = shuffleArray([
-        'Digital Marketing',
-        'UI UX Design',
-        'Web Development',
-         'Video Production']);
+function typingEffect(typingContentArray) {
+    const contactTexts = shuffleArray(typingContentArray);
     const typedtext = document.getElementsByClassName("typedtext")[0];
     let removing = false;
     let idx = char = 0;
@@ -38,10 +34,9 @@ function typingEffect() {
             removing = false; // No more removing characters
         }
 
-    }, 100); // Typing speed, 150 ms
+    }, 150); // Typing speed, 150 ms
 
 }
-typingEffect();
 function shuffleArray(array) {
     let currentIndex = array.length,
         temporaryValue, randomIndex;

@@ -139,6 +139,14 @@ p{
     margin-top: -12px !important;
 }
 
+@media (min-width: 1200px) and (max-width: 1700px) {
+    /* small laptop */
+    .home-title-text
+    {
+        width: 90%!important;
+    }
+}
+
 @media (max-width: 767px) {
     /* Mobile-specific styles */
     header{

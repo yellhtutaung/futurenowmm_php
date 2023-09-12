@@ -19,19 +19,28 @@
     {
         width: 87% !important;
     }
+    .home-title-text
+    {
+        width: 70%;
+    }
+    .slider-previous-overlay:hover{
+        cursor: url('<?php echo $domainUrl; ?>/assets/images/sliders/previous.png'),auto;
+    }
+    .slider-next-overlay:hover{
+        cursor: url('<?php echo $domainUrl; ?>/assets/images/sliders/next.png'),auto;
+    }
 </style>
 <body>
 <?php include 'layouts/header.php'; ?>
 
     <section  class="theme-container set-screen-fit-height d-flex">
         <div id="particles-js" class="row set-mt-row-content" >
-            <div class="col-md-12 col-lg-6 col-sm-12 d-flex align-items-end " style="padding-bottom: 5%!important;">
-                <div data-aos="fade-up" data-aos-duration="1000" >
-                    <h1 class="w-100 text-white fn-title-font py-0 my-0">We make better brands</h1>
-                    <h1 class="w-100 text-white fn-title-font py-0 my-0">and make brands better.</h1>
+            <div class="col-md-12 col-lg-7 col-sm-12 d-flex align-items-end " style="padding-bottom: 8%!important;">
+                <div class="once-text-content-append" style="width: 100% !important;" >
+                    <h1 class="home-title-text text-white fn-title-font py-0 my-0 once-type typedtext"></h1>
                 </div>
             </div>
-            <div class="col-md-12 col-lg-6 col-sm-12 d-flex align-items-end " style="padding-bottom: 5%!important;">
+            <div class="col-md-12 col-lg-5 col-sm-12 d-flex align-items-end " style="padding-bottom: 5%!important;">
                 <div data-aos="fade-up" data-aos-duration="1000" >
                     <p class="fn-paragraph-font text-right text-justify">We are a dynamic branding agency dedicated to creating
                         and enhancing brands. Our team of experts combines
@@ -51,8 +60,14 @@
     <section class="theme-container">
         <div class="owl-carousel owl-theme ">
             <div class="item">
-                <a href="">
+                <a href="javascript:void(0);">
                     <div class="slider-img-container" >
+                        <div class="home-slider-full-overlay" style="width: 100%;height:89%;display:flex;position: absolute;z-index: 2!important;">
+                            <div class="slider-previous-overlay" style="width: 50%;height:100%;position: absolute;z-index: 6!important;">
+                            </div>
+                            <div class="slider-next-overlay" style="width: 100%;height:100%;position: absolute;z-index: 5!important;">
+                            </div>
+                        </div>
                         <img class="w-100 h-auto " src="<?php echo $domainUrl; ?>/assets/images/sliders/1.png" alt="">
                     </div>
                 </a>
@@ -63,19 +78,15 @@
                 </div>
             </div>
             <div class="item">
-                <a href="">
-                    <img class="w-100 h-auto " src="<?php echo $domainUrl; ?>/assets/images/projects/2.png" alt="">
-                </a>
-                <div data-aos="fade-up" data-aos-duration="1000" class="slider-text-description mt-5">
-                    <p data-aos="fade-up" data-aos-duration="1000" class="fn-paragraph-font pb-0 mb-0">Hydro Myanmar</p>
-                    <p data-aos="fade-up" data-aos-duration="1000" class="fn-paragraph-font pb-0 mb-0">Premium Web Solution for Industry</p>
-                    <p data-aos="fade-up" data-aos-duration="1000" class="fn-paragraph-font pb-0 mb-0">Leading Hydro Survey Company</p>
-                </div>
-            </div>
-            <div class="item">
-                <a href="">
+                <a href="javascript:void(0);">
                     <div class="slider-img-container" >
-                        <img class="w-100 h-auto " src="<?php echo $domainUrl; ?>/assets/images/projects/4.png" alt="">
+                        <div class="home-slider-full-overlay" style="width: 100%;height:89%;position: absolute;z-index: 2!important;">
+                            <div class="slider-previous-overlay" style="width: 50%;height:100%;position: absolute;z-index: 6!important;">
+                            </div>
+                            <div class="slider-next-overlay" style="width: 100%;height:100%;position: absolute;z-index: 5!important;">
+                            </div>
+                        </div>
+                        <img class="w-100 h-auto " src="<?php echo $domainUrl; ?>/assets/images/projects/2.png" alt="">
                     </div>
                 </a>
                 <div data-aos="fade-up" data-aos-duration="1000" class="slider-text-description mt-5">
@@ -85,9 +96,37 @@
                 </div>
             </div>
             <div class="item">
-                <a href="">
+                <a href="javascript:void(0);">
                     <div class="slider-img-container" >
-                        <img class="w-100 h-auto " src="<?php echo $domainUrl; ?>/assets/images/projects/2.png" alt="">
+                        <div class="slider-img-container" >
+                            <div class="home-slider-full-overlay" style="width: 100%;height:89%;position: absolute;z-index: 2!important;">
+                                <div class="slider-previous-overlay" style="width: 50%;height:100%;position: absolute;z-index: 6!important;">
+                                </div>
+                                <div class="slider-next-overlay" style="width: 100%;height:100%;position: absolute;z-index: 5!important;">
+                                </div>
+                            </div>
+                            <img class="w-100 h-auto " src="<?php echo $domainUrl; ?>/assets/images/projects/4.png" alt="">
+                        </div>
+                    </div>
+                </a>
+                <div data-aos="fade-up" data-aos-duration="1000" class="slider-text-description mt-5">
+                    <p data-aos="fade-up" data-aos-duration="1000" class="fn-paragraph-font pb-0 mb-0">Hydro Myanmar</p>
+                    <p data-aos="fade-up" data-aos-duration="1000" class="fn-paragraph-font pb-0 mb-0">Premium Web Solution for Industry</p>
+                    <p data-aos="fade-up" data-aos-duration="1000" class="fn-paragraph-font pb-0 mb-0">Leading Hydro Survey Company</p>
+                </div>
+            </div>
+            <div class="item">
+                <a href="javascript:void(0);">
+                    <div class="slider-img-container" >
+                        <div class="slider-img-container" >
+                            <div class="home-slider-full-overlay" style="width: 100%;height:89%;position: absolute;z-index: 2!important;">
+                                <div class="slider-previous-overlay" style="width: 50%;height:100%;position: absolute;z-index: 6!important;">
+                                </div>
+                                <div class="slider-next-overlay" style="width: 100%;height:100%;position: absolute;z-index: 5!important;">
+                                </div>
+                            </div>
+                            <img class="w-100 h-auto " src="<?php echo $domainUrl; ?>/assets/images/projects/2.png" alt="">
+                        </div>
                     </div>
                 </a>
                 <div data-aos="fade-up" data-aos-duration="1000" class="slider-text-description mt-5">
@@ -101,12 +140,12 @@
         <div class="d-flex justify-content-start align-items-center" style="margin-top: -15px">
             <div data-aos="fade-up" data-aos-duration="1800" class="mr-5">
                 <a class="previous-slider opacity-05" href="javascript:void(0)">
-                    <img class="w-100 " src="assets/images/gallery/previous.png" alt="">
+                    <img class="w-100 " src="<?php echo $domainUrl; ?>/assets/images/gallery/previous.png" alt="">
                 </a>
             </div>
             <div data-aos="fade-up" data-aos-duration="1800" >
-                <a class="next-slider" href="javascript:void(0)">
-                    <img src="assets/images/gallery/next.png" alt="">
+                <a class="next-slider" href="javascript:void(0)" >
+                    <img src="<?php echo $domainUrl; ?>/assets/images/gallery/next.png" alt="">
                 </a>
             </div>
         </div>
@@ -243,10 +282,19 @@
     <script src="<?php echo $domainUrl; ?>/assets/js/count-down.min.js" ></script>
     <?php include 'layouts/footer-script.php'; ?>
     <script src="<?php echo $domainUrl; ?>/assets/js/owl-setup.js" ></script>
+    <script src="<?php echo $domainUrl; ?>/assets/js/typing-animation.js"></script>
 
 <!--    <script src="--><?php //echo $domainUrl; ?><!--/assets/js/particles.js" ></script>-->
 <!--    <script src="--><?php //echo $domainUrl; ?><!--/assets/js/particles-setup.js" ></script>-->
 <script>
+
+    typingEffect([
+        'We make better brands and make brands better.']); // That u want to show on typing content
+    setTimeout(function (){
+        $('.once-type').remove();
+        $('.once-text-content-append').prepend(`<h1 class="home-title-text text-white fn-title-font py-0 my-0 once-type typedtext">We make better brands and make brands better.</h1>`);
+    },6500);
+
 
     $(document).ready(function() {
 
@@ -257,7 +305,18 @@
         let toTotalCarousel = stringToArray.length - 1 ;
         $('.carousel-info-text').html(`1 of ${toTotalCarousel }`);
 
-        $('.next-slider').click(function (){
+        $('.slider-next-overlay').click(function (){
+           $('.next-slider').click();
+        });
+
+        $('.slider-previous-overlay').click(function (){
+            $('.previous-slider').click();
+            // console.log('previous click');
+        });
+
+
+        $('.next-slider').click(function ()
+        {
             $('.owl-next').click();
             $('.previous-slider').removeClass("opacity-05");
 
@@ -275,7 +334,8 @@
             $('.carousel-info-text').html(`${uptTeamp} of ${toTotalCarousel }`);
         });
 
-        $('.previous-slider').click(function (){
+        $('.previous-slider').click(function ()
+        {
             $('.owl-prev').click();
             $('.next-slider').removeClass("opacity-05");
 

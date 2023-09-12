@@ -15,11 +15,12 @@
 <section  class="theme-container p-md d-flex" style="height: 2200px">
     <div class="container-fluid px-0 mx-0">
         <div class="row " style="margin: 15% 0 15% 0;" >
-            <div class="col-md-10 col-sm-12 pl-0 py-3 scroll-inner-text-box"
+            <div class="col-md-10 col-sm-12 pl-0 py-3 scroll-inner-text-box once-text-content-append"
                  style="height: 300px;overflow: hidden;position: fixed;" >
-                <p style="color: black;" class="animate__animated scroll-text1 w-100 fn-title-font scroll-text-spacing">Where Magic Meets Branding</p>
-<!--                <p style="color: black;opacity: 0;" class="scroll-text2 w-100 fn-title-font scroll-text-spacing">We're not just your average branding agency.</p>-->
-<!--                <p style="color: black;opacity: 0;" class="scroll-text3 w-100 fn-title-font scroll-text-spacing">A bunch of creative minds, armed with the power of strategy and a knack for artistic flair, coming together to weave brand stories that leave everyone swooning.</p>-->
+                <p style="color: black;" class="once-type typedtext animate__animated scroll-text1 w-100 fn-title-font scroll-text-spacing"></p>
+                <!--                Where Magic Meets Branding-->
+                <!--                <p style="color: black;opacity: 0;" class="scroll-text2 w-100 fn-title-font scroll-text-spacing">We're not just your average branding agency.</p>-->
+                <!--                <p style="color: black;opacity: 0;" class="scroll-text3 w-100 fn-title-font scroll-text-spacing">A bunch of creative minds, armed with the power of strategy and a knack for artistic flair, coming together to weave brand stories that leave everyone swooning.</p>-->
             </div>
         </div>
 
@@ -31,14 +32,19 @@
 </section>
 <div class="container-fluid">
     <div class="row mt-5">
+
         <article class="wrapper">
             <div class="marquee">
                 <div class="marquee__group">
                     <svg>
-                        <use xlink:href="#mcdonalds" />
+<!--                        <use xlink:href="#mcdonalds" />-->
+                        <img src="assets/images/partners/1.png" alt="">
+
                     </svg>
                     <svg>
-                        <use xlink:href="#jordan" />
+<!--                        <use xlink:href="#jordan" />-->
+                        <img src="assets/images/partners/2.png" alt="">
+
                     </svg>
                     <svg>
                         <use xlink:href="#aws" />
@@ -59,12 +65,15 @@
                         <use xlink:href="#hulu" />
                     </svg>
                 </div>
+
                 <div aria-hidden="true" class="marquee__group">
                     <svg>
-                        <use xlink:href="#mcdonalds" />
+<!--                        <use xlink:href="#mcdonalds" />-->
+                        <img src="assets/images/partners/1.png" alt="">
                     </svg>
                     <svg>
-                        <use xlink:href="#jordan" />
+<!--                        <use xlink:href="#jordan" />-->
+                        <img src="assets/images/partners/2.png" alt="">
                     </svg>
                     <svg>
                         <use xlink:href="#aws" />
@@ -142,68 +151,12 @@
                     </svg>
                 </div>
             </div>
-
-            <div class="marquee">
-                <div class="marquee__group">
-                    <svg>
-                        <use xlink:href="#mcdonalds" />
-                    </svg>
-                    <svg>
-                        <use xlink:href="#jordan" />
-                    </svg>
-                    <svg>
-                        <use xlink:href="#aws" />
-                    </svg>
-                    <svg>
-                        <use xlink:href="#spotify" />
-                    </svg>
-                    <svg>
-                        <use xlink:href="#burger-king" />
-                    </svg>
-                    <svg>
-                        <use xlink:href="#honda" />
-                    </svg>
-                    <svg>
-                        <use xlink:href="#notion" />
-                    </svg>
-                    <svg>
-                        <use xlink:href="#hulu" />
-                    </svg>
-                </div>
-
-                <div aria-hidden="true" class="marquee__group">
-                    <svg>
-                        <use xlink:href="#mcdonalds" />
-                    </svg>
-                    <svg>
-                        <use xlink:href="#jordan" />
-                    </svg>
-                    <svg>
-                        <use xlink:href="#aws" />
-                    </svg>
-                    <svg>
-                        <use xlink:href="#spotify" />
-                    </svg>
-                    <svg>
-                        <use xlink:href="#burger-king" />
-                    </svg>
-                    <svg>
-                        <use xlink:href="#honda" />
-                    </svg>
-                    <svg>
-                        <use xlink:href="#notion" />
-                    </svg>
-                    <svg>
-                        <use xlink:href="#hulu" />
-                    </svg>
-                </div>
-            </div>
         </article>
+
         <svg style="display: none" xmlns="http://www.w3.org/2000/svg">
             <defs>
                 <symbol id="mcdonalds" viewBox="0 0 24 24">
-<!--                    <path d="M17.243 3.006c2.066 0 3.742 8.714 3.742 19.478H24c0-11.588-3.042-20.968-6.766-20.968-2.127 0-4.007 2.81-5.248 7.227-1.241-4.416-3.121-7.227-5.231-7.227C3.031 1.516 0 10.888 0 22.476h3.014c0-10.763 1.658-19.47 3.724-19.47 2.066 0 3.741 8.05 3.741 17.98h2.997c0-9.93 1.684-17.98 3.75-17.98Z" />-->
-                    <path d="M 4 8 L 10 1 L 13 0 L 12 3 L 5 9 C 6 10 6 11 7 10 C 7 11 8 12 7 12 A 1.42 1.42 0 0 1 6 13 A 5 5 0 0 0 4 10 Q 3.5 9.9 3.5 10.5 T 2 11.8 T 1.2 11 T 2.5 9.5 T 3 9 A 5 5 90 0 0 0 7 A 1.42 1.42 0 0 1 1 6 C 1 5 2 6 3 6 C 2 7 3 7 4 8 M 10 1 L 8 5 L 12 3 L 10.2 2.8 L 10 1" />
+                    <path d="M17.243 3.006c2.066 0 3.742 8.714 3.742 19.478H24c0-11.588-3.042-20.968-6.766-20.968-2.127 0-4.007 2.81-5.248 7.227-1.241-4.416-3.121-7.227-5.231-7.227C3.031 1.516 0 10.888 0 22.476h3.014c0-10.763 1.658-19.47 3.724-19.47 2.066 0 3.741 8.05 3.741 17.98h2.997c0-9.93 1.684-17.98 3.75-17.98Z" />
                 </symbol>
 
                 <symbol id="jordan" viewBox="0 0 24 24">
@@ -345,12 +298,20 @@
 <!--</div>-->
 
 <?php include 'layouts/footer.php'; ?>
-<!--<script src="--><?php //echo $domainUrl; ?><!--/assets/js/count-down.min.js" ></script>-->
+<script src="<?php echo $domainUrl; ?>/assets/js/typing-animation.js" ></script>
 <?php include 'layouts/footer-script.php'; ?>
 <!--    <script src="--><?php //echo $domainUrl; ?><!--/assets/js/particles.js" ></script>-->
 <!--    <script src="--><?php //echo $domainUrl; ?><!--/assets/js/particles-setup.js" ></script>-->
 
 <script>
+
+
+    typingEffect([
+        'Where Magic Meets Branding']); // That u want to show on typing content
+    setTimeout(function (){
+        $('.once-type').remove();
+        $('.once-text-content-append').prepend(`<p style="color: black;" class="once-type typedtext animate__animated scroll-text1 w-100 fn-title-font scroll-text-spacing">Where Magic Meets Branding</p>`)
+    },4000);
 
     $(document).ready(function(){
         $('header').css('background',"linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%)");

@@ -11,7 +11,7 @@
         <div class="row " style="margin: 18% 0 18% 0;" >
             <div class="col-md-6 col-lg-6 col-sm-12 px-0 mx-0" >
                 <p class="w-100 text-white fn-title-font py-0 my-0">We make World-Class</p>
-                <p class="fn-title-font typedtext py-0 my-0"></p>
+                <p style="height: 90px" class="fn-title-font typedtext py-0 my-0"></p>
             </div>
         </div>
     </div>
@@ -136,6 +136,14 @@
 </script>
 <!--<script src="https://cdn.jsdelivr.net/gh/reymon359/web-experiments/Social%20Signature/socialsignature.min.js" crossorigin="anonymous"></script>-->
 <script src="assets/js/typing-animation.js" crossorigin="anonymous"></script>
+
+<script>
+    typingEffect([
+        'Digital Marketing',
+        'UI UX Design',
+        'Web Development',
+        'Video Production']); // That u want to show on typing content
+</script>
 
 </body>
 </html>
