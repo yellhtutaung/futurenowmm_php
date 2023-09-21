@@ -9,49 +9,55 @@
         justify-content: center;
         align-items: center;
     }
+    /*header{*/
+    /*    position: sticky !important;*/
+    /*    top: 0;*/
+    /*    z-index: 100;*/
+    /*}*/
+
 </style>
 <body>
 <?php include 'layouts/header.php'; ?>
-
+<!---->
 <section  class="theme-container p-md d-flex" >
-    <div class="container-fluid px-0 mx-0" id="text-box-height">
-        <p style="color: black;" class="once-type typedtext animate__animated scroll-text1 w-100 fn-title-font scroll-text-spacing"></p>
+    <div class="container-fluid px-0 mx-0 once-text-content-append" id="text-box-height">
+        <p style="color: black;height: 50px;" class="once-type typedtext animate__animated scroll-text1 w-100 fn-title-font scroll-text-spacing"></p>
     </div>
 </section>
 <div id="contact-info-div" class="theme-container" >
     <div class="row" >
-        <div class="col-lg-3 col-md-3 col-sm-12">
+        <div class="col-md-3 col-sm-12">
             <h5 class="text-black fs-26px">General Inquries</h5>
             <a class="text-black op-5 fn-paragraph-font" href="mailto:hello@futurenowmm.com">hello@futurenowmm.com</a>
         </div>
-        <div class="col-lg-3 col-md-3 col-sm-12">
+        <div class="col-md-3 col-sm-12">
             <h5 class="text-black fs-26px">Call Us</h5>
             <a class="text-black op-5 fn-paragraph-font" href="tel:+959884916745" >09884916745</a><br>
             <a class="text-black op-5 fn-paragraph-font" href="tel:+959895089891" >09895089891</a>
         </div>
-        <div class="col-lg-3 col-md-3 col-sm-12">
+        <div class="col-md-3 col-sm-12">
             <h5 class="text-black fs-26px">Follow Us</h5>
             <div class="d-flex">
-                <a class="text-black op-5  fn-paragraph-font" href="">Instagram <img src="../assets/images/gallery/target_blank.svg" alt=""> &nbsp; </a>
-                <a class="text-black op-5  fn-paragraph-font" href="">LinkIn <img src="../assets/images/gallery/target_blank.svg" alt=""> &nbsp; </a>
+                <a class="text-black op-5  fn-paragraph-font" href="">Instagram <img src="assets/images/gallery/target_blank.svg" alt=""> &nbsp; </a>
+                <a class="text-black op-5  fn-paragraph-font" href="">LinkIn <img src="assets/images/gallery/target_blank.svg" alt=""> &nbsp; </a>
             </div>
             <div class="d-flex">
-                <a class="text-black op-5 fn-paragraph-font" href="">Facebook <img src="../assets/images/gallery/target_blank.svg" alt=""> &nbsp; </a>
-                <a class="text-black op-5 fn-paragraph-font" href="">Behance <img src="../assets/images/gallery/target_blank.svg" alt=""> &nbsp; </a>
+                <a class="text-black op-5 fn-paragraph-font" href="">Facebook <img src="assets/images/gallery/target_blank.svg" alt=""> &nbsp; </a>
+                <a class="text-black op-5 fn-paragraph-font" href="">Behance <img src="assets/images/gallery/target_blank.svg" alt=""> &nbsp; </a>
             </div>
         </div>
-        <div class="col-lg-3 col-md-3 col-sm-12">
+        <div class="col-md-3 col-sm-12">
             <h5 class="text-black fs-26px">Visit</h5>
-            <p class="mb-0 pb-0 op-5 fn-paragraph-font">Times city complex,</p>
-            <p class="my-0 py-0 op-5 fn-paragraph-font">Building 401, 2nd Fl, Yangon.</p>
+<!--            <p class="mb-0 pb-0 op-5 fn-paragraph-font" style="color: black;">Times city complex,</p>-->
+<!--            <p class="my-0 py-0 op-5 fn-paragraph-font" style="color: black;">Building 401, 2nd Fl, Yangon.</p>-->
             <div class="mt-3">
-                <p class="mb-0 pb-0 op-5 fn-paragraph-font">M Tower, 15th Floor,</p>
-                <p class="my-0 py-0 op-5 fn-paragraph-font">Kamayut, Yangon.</p>
+                <p class="mb-0 pb-0 op-5 fn-paragraph-font" style="color: black;">M Tower, 15th Floor,</p>
+                <p class="my-0 py-0 op-5 fn-paragraph-font" style="color: black;">Kamayut, Yangon.</p>
             </div>
 
         </div>
     </div>
-    <div class="row">
+    <div class="row mt-3">
         <div class="col-sm-6 col-md-6">
             <h5 class="text-black fs-26px">Work Hard</h5>
             <p style="color: black;" class="fn-paragraph-font">Mon to Fri ( 9am to 5pm )</p>
@@ -75,13 +81,22 @@
 
 <script>
 
+    let getScrollStop = 0;
 
     typingEffect([
         'No great thing is made by alone.']); // That u want to show on typing content
-    // setTimeout(function (){
-    //     $('.once-type').remove();
-    //     $('.once-text-content-append').prepend(`<p style="color: black;" class="once-type animate__animated w-100 fn-title-font scroll-text-spacing">No great thing is made by alone.</p>`)
-    // },4000);
+    setTimeout(function (){
+        $('.once-type').remove();
+        $('.once-text-content-append').prepend(`<p style="color: black;height: 50px;" class="once-type typedtext animate__animated scroll-text1 w-100 fn-title-font scroll-text-spacing" >No great thing is made by alone.</p>`)
+    },4000);
+
+    const getTextBoxHeight = () =>
+    {
+        let windowHeight = window.innerHeight;
+        let headerHeight = $('header').height();
+        let getTextBoxHeight = windowHeight - headerHeight;
+        return getTextBoxHeight;
+    }
 
     $(document).ready(function(){
         AOS.init();
@@ -92,25 +107,31 @@
         $('a').removeClass("text-white");
         $('a').css("color","black");
         $('.header-logo').attr("src","assets/images/logo/fn-logo-black.svg");
-
-        let windowHeight = window.innerHeight;
-        let headerHeight = $('header').height();
-        let getTextBoxHeight = windowHeight - headerHeight;
-        $('#text-box-height').css("height",getTextBoxHeight);
+        $('#text-box-height').css("height",getTextBoxHeight());
 
     });
+
 
     $('body').attr("style","");
 
     const updateScroll = () =>
     {
+        let windowHeight = window.innerHeight;
         let scrollLocation = $(window).scrollTop();
         let scrollLocationCeil = Math.ceil(scrollLocation);
-
-        // $('.scroll-text1').css({"transform": `translateY(${-scrollLocationCeil}%)`});
-        $('.scroll-text1').css({"margin-top": `${-scrollLocationCeil}px`});
-        $('#contact-info-div').css({"transform": `translateY(${-(1.1 * scrollLocationCeil)}%)`});
-        $('footer').css({"transform": `translateY(${-(3 * scrollLocationCeil)}%)`});
+        getScrollStop = (11 / 100) * windowHeight;
+        console.log($('body').height())
+        scrollLocationCeil = scrollLocationCeil >= 80 ? scrollLocationCeil - 80 : scrollLocationCeil;
+        if (scrollLocationCeil < getScrollStop)
+        {
+            $('.scroll-text1').css({"margin-top": `${-(scrollLocationCeil)}px`});
+            $('#contact-info-div').css({"transform": `translateY(${-(scrollLocationCeil)}%)`});
+            $('footer').css({"transform": `translateY(${-(scrollLocationCeil)}%)`});
+            // $("body").css("overflow", "auto");
+        }else {
+            // $("body").css("overflow", "hidden");
+        }
+        $('#text-box-height').css("height",( getTextBoxHeight() - (scrollLocationCeil) ));
 
         $('.bottom-fixed').html(scrollLocationCeil);
 
@@ -118,8 +139,12 @@
 
     $(window).on('scroll', updateScroll);
     // $('footer').css({"position": "fixed","bottom": "0","right": "0", "left":"0"});
+
     $('footer').css('background','');
     $('#footer-cover').css('background','');
+
+
+
 
 </script>
 
