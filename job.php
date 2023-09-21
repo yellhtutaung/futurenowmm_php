@@ -31,8 +31,8 @@
     <div class="container-fluid px-0 mx-0">
         <div class="row " style="margin: 18% 0 18% 0;" >
             <div class="col-md-6 col-lg-6 col-sm-12 px-0 mx-0 once-text-content-append" >
-                <p style="height: 80px;" class="once-type fn-title-font typedtext"></p>
-                <p class=" fs-20px">Interested in working with us? At Future Now, we believe in team work. To support our team, we need powerful individuals just like you. Take a look at our current openings.</p>
+                <p style="height: 50px;" class="once-type fn-title-font typedtext"></p>
+                <p class=" fn-paragraph-font">Interested in working with us? At Future Now, we believe in team work. To support our team, we need powerful individuals just like you. Take a look at our current openings.</p>
             </div>
         </div>
     </div>
@@ -47,9 +47,9 @@
                         <span class="mt-icon-position fs-26px mt-1 text-white material-symbols-rounded expend-icon-1">add</span>
                     </div>
                     <div class="col-11">
-                        <p class="fs-26px w-100">Senior Designer:</p>
+                        <p class="fs-26px w-100">Senior Designer</p>
                         <div style="height: 0px;" class="text-div-control fs-20px expend-div1 ">
-                            <p class="expend-text1 w-75 text-white">
+                            <p class="expend-text1 w-75 text-white opacity-05">
                                 We get it – your brand is as unique as your favorite emoji combo. Our squad of branding wizards cooks up personalized strategies that blend seamlessly with your brand's vibe.
                             </p>
                         </div>
@@ -65,9 +65,9 @@
                         <span class="mt-icon-position fs-26px mt-1 text-white material-symbols-rounded expend-icon-2">add</span>
                     </div>
                     <div class="col-11">
-                        <p class="fs-26px w-100">UI UX Designer:</p>
+                        <p class="fs-26px w-100">UI UX Designer</p>
                         <div style="height: 0px;" class="text-div-control fs-20px expend-div2">
-                            <p class="expend-text2 w-75 text-white">
+                            <p class="expend-text2 w-75 text-white opacity-05">
                                 We're not about blending in; we're all about helping you strut your stuff with confidence. We dive deep into market trends, sprinkle some fairy dust, and voilà – your brand is ready to steal the spotlight!
                             </p>
                         </div>
@@ -83,9 +83,9 @@
                         <span class="mt-icon-position fs-26px mt-1 text-white material-symbols-rounded expend-icon-3">add</span>
                     </div>
                     <div class="col-11">
-                        <p class="fs-26px w-100">Human Resource Associate:</p>
+                        <p class="fs-26px w-100">Human Resource Associate</p>
                         <div style="height: 0px;" class="text-div-control fs-20px expend-div3">
-                            <p class="expend-text2 w-75 text-white">
+                            <p class="expend-text2 w-75 text-white opacity-05">
                                 Anyone can make a logo, but we? We're like the fairy godparents of design, whipping up eye-catching visuals and words that pack a punch. Our designers, writers, and strategy gurus are the dream team you never knew you needed.
                             </p>
                         </div>
@@ -105,8 +105,7 @@
 <script>
 
     $(document).ready(function() {
-
-
+        AOS.init();
     });
 
 </script>
@@ -117,7 +116,7 @@
         'What’s Your Passion?']); // That u want to show on typing content
         setTimeout(function (){
             $('.once-type').remove();
-            $('.once-text-content-append').prepend(`<p style="height: 80px;" class="once-type fn-title-font" >What’s Your Passion?</p>`)
+            $('.once-text-content-append').prepend(`<p style="height: 50px;" class="once-type fn-title-font" >What’s Your Passion?</p>`)
         },3000);
 
 

@@ -273,8 +273,8 @@
                 </div>
             </div>
         </div>
-        <p data-aos="fade-up" data-aos-duration="1500" class="text-center animatable fadeInUp" style="margin: 100px 0 270px 0; text-decoration: underline;">
-            <a class="text-white fn-paragraph-font " href="">Explore our works</a>
+        <p data-aos="fade-up" data-aos-duration="1500" class="text-center animatable fadeInUp" style="margin: 240px 0 250px 0; text-decoration: underline;">
+            <a class="text-white fn-paragraph-font " href="<?php echo $domainUrl;?>/works.php">Explore our works</a>
         </p>
     </section>
 
@@ -297,6 +297,8 @@
 
 
     $(document).ready(function() {
+
+        AOS.init();
 
         var uptTeamp = $('.carousel-info-text').attr("data-temp-active");
         $('.owl-dots').addClass("d-none");

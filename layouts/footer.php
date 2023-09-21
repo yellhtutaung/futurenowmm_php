@@ -1,5 +1,5 @@
 
-<div style="background: black;padding: 3px">
+<div id="footer-cover" style="background: black;padding: 3px;">
     <footer class="mb-5 theme-container" style="background: black!important;">
         <div class="d-flex pt-4 align-items-center justify-content-between" >
             <div>

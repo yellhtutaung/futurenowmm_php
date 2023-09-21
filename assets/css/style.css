@@ -47,7 +47,10 @@ a
 .project-img-control:hover .hover-scroll-div p {
     transform: translateY(45px) scaleY(1.09);
 }
-
+.header-nav-fs
+{
+    font-size: 30px;
+}
 /*project-img-control:hover:not(:hover) {*/
 /*    transform: translateY(50px) scaleY(1);*/
 /*}*/

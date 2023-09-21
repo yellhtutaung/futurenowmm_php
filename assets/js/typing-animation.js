@@ -34,7 +34,7 @@ function typingEffect(typingContentArray) {
             removing = false; // No more removing characters
         }
 
-    }, 150); // Typing speed, 150 ms
+    }, 100); // Typing speed, 150 ms
 
 }
 function shuffleArray(array) {

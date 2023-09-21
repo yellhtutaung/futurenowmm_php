@@ -31,7 +31,7 @@
             </li>
             <li class="hide-mobile nav-list hover-news " style="justify-content: right !important;"
                 onmouseenter="enterMouse('news');" onmouseleave="leaveMouse('news')">
-                <a class="text-white" href="">News&nbsp;</a>
+                <a class="text-white" href="<?php echo $domainUrl; ?>/news.php">News&nbsp;</a>
                 <ul class="d-none sub-nav sub-hover-news  h-auto ">
                     <li class="mb-3"><a class="text-white text-right" href="">Latest media coverage </a></li>
                     <li><a class="text-white float-right" href="">insights from us.</a></li>
@@ -63,7 +63,8 @@
         <a href="<?php echo $domainUrl;?>"><p class="hambager-menu-text text-white" >Home</p></a>
         <a href="<?php echo $domainUrl;?>/about.php"><p class="hambager-menu-text text-white" >About</p></a>
         <a href="<?php echo $domainUrl;?>/works.php"><p class="hambager-menu-text text-white">Works</p></a>
-        <a href="<?php echo $domainUrl;?>/job.php"><p class="hambager-menu-text text-white">Works</p></a>
+        <a href="<?php echo $domainUrl;?>/job.php"><p class="hambager-menu-text text-white">Jons</p></a>
+        <a href="<?php echo $domainUrl;?>/news.php"><p class="hambager-menu-text text-white">News</p></a>
         <a href="<?php echo $domainUrl;?>/contact.php"><p class="hambager-menu-text text-white">Contact Us </p></a>
     </div>
     <div href="javascript:void(0) " onclick="overlayClose()" class="closebtn text-white p-0">
