@@ -107,7 +107,7 @@
 
 <div class="project-overlay" style="height: 0%;" >
     <div class="theme-container mt-5">
-        <div class="fn-paragraph-font project-overlay-close">Close</div>
+        <a href="javascript:void(0);" class="text-white fn-paragraph-font project-overlay-close">Close</a>
         <div class="row" style="margin-top: 150px">
             <div class="col-sm-12 col-md-6">
                 <p class="fn-title-font ">Prime Automotive</p>
@@ -165,7 +165,7 @@
         $('.project-overlay').css('height','100%');
     }
 
-    $('.project-overlay').click(function (){
+    $('.project-overlay-close').click(function (){
         $('.project-overlay').css('height','0%');
     });
 

@@ -6,6 +6,11 @@
 body{
     /*font-family: "nbInternational";*/
     transition: opacity 0.3s ease-in-out !important; /* Adding a transition for smooth effect */
+
+    user-select: none;
+    -moz-user-select: none; /* Firefox */
+    -webkit-user-select: none; /* Safari and Chrome */
+    -ms-user-select: none; /* IE and Edge */
 }
 .nav-list:hover ~ body {
     width: 100%;

@@ -63,7 +63,7 @@
         <a href="<?php echo $domainUrl;?>"><p class="hambager-menu-text text-white" >Home</p></a>
         <a href="<?php echo $domainUrl;?>/about.php"><p class="hambager-menu-text text-white" >About</p></a>
         <a href="<?php echo $domainUrl;?>/works.php"><p class="hambager-menu-text text-white">Works</p></a>
-        <a href="<?php echo $domainUrl;?>/job.php"><p class="hambager-menu-text text-white">Jons</p></a>
+        <a href="<?php echo $domainUrl;?>/job.php"><p class="hambager-menu-text text-white">Jobs</p></a>
         <a href="<?php echo $domainUrl;?>/news.php"><p class="hambager-menu-text text-white">News</p></a>
         <a href="<?php echo $domainUrl;?>/contact.php"><p class="hambager-menu-text text-white">Contact Us </p></a>
     </div>

@@ -6,6 +6,10 @@
 
 
 <script>
+    // document.addEventListener("contextmenu", function(event) {
+    //     event.preventDefault();
+    // });
+
     $(document).ready(function() {
         // AOS.init();
     });

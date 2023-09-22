@@ -288,6 +288,7 @@
 <!--    <script src="--><?php //echo $domainUrl; ?><!--/assets/js/particles-setup.js" ></script>-->
 <script>
 
+
     typingEffect([
         'We make better brands and make brands better.']); // That u want to show on typing content
     setTimeout(function (){
