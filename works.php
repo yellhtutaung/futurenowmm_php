@@ -60,7 +60,7 @@
             </a>
         </div>
         <div id="div-ui-ux" class="col-sm-12 col-md-6 mb-5 animate__animated animate__fadeInUp">
-            <a href="" data-aos="fade-up" data-aos-duration="1500" class="project-img-control overflow-hidden">
+            <a href="<?php echo $domainUrl; ?>/projects/yangon-international-airport.php" data-aos="fade-up" data-aos-duration="1500" class="project-img-control overflow-hidden">
                 <img class="w-100" src="<?php echo $domainUrl; ?>/assets/images/projects/4.png" alt="">
                 <div class="hover-scroll-div">
                     <p style="margin-top: -30px" class="fn-paragraph-font animatable fadeInUp">Laika Pet Cafe</p>

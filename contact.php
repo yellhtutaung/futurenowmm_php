@@ -19,10 +19,10 @@
         height: 15px;
     }
     #contact-info-div{
-        transition: 0.3s;
+        transition: 0.2s;
     }
     .scroll-text1{
-        transition: 0.3s;
+        transition: 0.2s;
     }
 </style>
 <body>

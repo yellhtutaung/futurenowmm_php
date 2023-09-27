@@ -246,13 +246,13 @@
                 </div>
             </div>
             <div class="col-sm-12 col-md-6 mb-5">
-                <div data-aos="fade-up" data-aos-duration="1500" class="project-img-control overflow-hidden">
+                <a  href="<?php echo $domainUrl; ?>/projects/yangon-international-airport.php" data-aos="fade-up" data-aos-duration="1500" class="project-img-control overflow-hidden">
                     <img class="w-100" src="<?php echo $domainUrl; ?>/assets/images/projects/4.png" alt="">
                     <div class="hover-scroll-div">
                         <p style="margin-top: -30px" class="fn-paragraph-font animatable fadeInUp">Laika Pet Cafe</p>
                         <p class="fn-paragraph-font animatable fadeInUp">Making you are pet happier</p>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="col-sm-12 col-md-6 mb-5">
                 <div data-aos="fade-up" data-aos-duration="1500" class="project-img-control overflow-hidden">
@@ -264,13 +264,13 @@
                 </div>
             </div>
             <div class="col-sm-12 col-md-6 mb-5">
-                <div data-aos="fade-up" data-aos-duration="1500" class="project-img-control overflow-hidden">
+                <a href="<?php echo $domainUrl; ?>/projects/prime-automotive.php" data-aos="fade-up" data-aos-duration="1500" class="project-img-control overflow-hidden">
                     <img class="w-100" src="<?php echo $domainUrl; ?>/assets/images/projects/6.png" alt="">
                     <div class="hover-scroll-div">
                         <p style="margin-top: -30px" class="fn-paragraph-font animatable fadeInUp">Laika Pet Cafe</p>
                         <p class="fn-paragraph-font animatable fadeInUp">Making you are pet happier</p>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
         <p data-aos="fade-up" data-aos-duration="1500" class="text-center animatable fadeInUp" style="margin: 240px 0 250px 0; text-decoration: underline;">
