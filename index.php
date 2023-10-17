@@ -21,7 +21,7 @@
     }
     .home-title-text
     {
-        width: 70%;
+        width: 90%;
     }
     .slider-previous-overlay:hover{
         cursor: url('<?php echo $domainUrl; ?>/assets/images/sliders/previous.png'),auto;
@@ -57,7 +57,7 @@
         </div>
     </section>
 
-    <section class="theme-container">
+    <section class="theme-container" data-aos="fade-up" data-aos-duration="1000">
         <div class="owl-carousel owl-theme ">
             <div class="item">
                 <a href="javascript:void(0);">
@@ -163,7 +163,7 @@
                         <h1 id="count" class="animatable fadeInUp stat d-inline text-white fn-title-font"> </h1><h1 class="fn-title-font text-white d-inline">+</h1>
                     </div>
                     <div class="col-7">
-                        <p class="fn-paragraph-font animatable fadeInUp"  >Worked with clients from several industries</p>
+                        <p class="fn-paragraph-font animatable fadeInUp"  >Different industries that we have served</p>
                     </div>
                 </div>
                 <div class="row py-2">
@@ -179,7 +179,8 @@
                         <h1 id="count3" class="animatable fadeInUp d-inline text-white fn-title-font"></h1><h1 class="fn-title-font text-white d-inline">+</h1>
                     </div>
                     <div class="col-7">
-                        <p class="fn-paragraph-font animatable fadeInUp"  >Clients from countries worldwide </p>
+                        <p class="fn-paragraph-font animatable fadeInUp"  >Oversea clients from
+                            Canada, Thailand, U.S.</p>
                     </div>
                 </div>
             </div>
@@ -189,7 +190,7 @@
                         <h1 id="count4" class="animatable fadeInUp d-inline text-white d-inline fn-title-font">20+</h1><h1 class="fn-title-font text-white d-inline">+</h1>
                     </div>
                     <div class="col-7">
-                        <p class="fn-paragraph-font animatable fadeInUp"  >Worked with clients from several industries</p>
+                        <p class="fn-paragraph-font animatable fadeInUp"  >years of industry experience</p>
                     </div>
                 </div>
                 <div class="row py-2">
@@ -197,8 +198,8 @@
                         <h1 id="count5" class="animatable fadeInUp d-inline text-white fn-title-font">1000+</h1><h1 class="fn-title-font text-white d-inline">+</h1>
                     </div>
                     <div class="col-7">
-                        <p class="fn-paragraph-font animatable fadeInUp py-0 ">Cups of coffee. Yep, we love coffee.</p>
-<!--                        <p class="fn-paragraph-font animatable fadeInUp py-0 "></p>-->
+                        <p class="fn-paragraph-font animatable fadeInUp"  >Trusted by clients
+                            local and global </p>
                     </div>
                 </div>
                 <div class="row py-2">
@@ -206,8 +207,8 @@
                         <h1 id="count6" class="animatable fadeInUp d-inline text-white fn-title-font">10+</h1><h1 class="fn-title-font text-white d-inline">+</h1>
                     </div>
                     <div class="col-7">
-                        <p class="fn-paragraph-font animatable fadeInUp"  >Trusted clients from
-                            Canada, Thailand, U.S. </p>
+                        <p class="fn-paragraph-font animatable fadeInUp py-0 ">Cups of coffee. Yep, we love coffee.</p>
+                        <!--                        <p class="fn-paragraph-font animatable fadeInUp py-0 "></p>-->
                     </div>
                 </div>
             </div>
@@ -219,35 +220,8 @@
         <h5 class="text-white my-4 animatable fadeInUp fn-paragraph-font"  >More Projects</h5>
         <div class="row">
             <div class="col-sm-12 col-md-6 mb-5">
-                <div data-aos="fade-up" data-aos-duration="1500" class="project-img-control overflow-hidden">
+                <a href="<?php echo $domainUrl; ?>/projects/laika.php" data-aos="fade-up" data-aos-duration="1500" class="project-img-control overflow-hidden">
                     <img class="w-100" src="<?php echo $domainUrl; ?>/assets/images/projects/1.png" alt="">
-                    <div class="hover-scroll-div">
-                        <p style="margin-top: -30px" class="fn-paragraph-font animatable fadeInUp">Laika Pet Cafe</p>
-                        <p class="fn-paragraph-font animatable fadeInUp">Making you are pet happier</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-6 mb-5">
-                <div data-aos="fade-up" data-aos-duration="1500" class="project-img-control overflow-hidden">
-                    <img class="w-100" src="<?php echo $domainUrl; ?>/assets/images/projects/2.png" alt="">
-                    <div class="hover-scroll-div">
-                        <p style="margin-top: -30px" class="fn-paragraph-font animatable fadeInUp">Laika Pet Cafe</p>
-                        <p class="fn-paragraph-font animatable fadeInUp">Making you are pet happier</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-6 mb-5">
-                <div data-aos="fade-up" data-aos-duration="1500" class="project-img-control overflow-hidden">
-                    <img class="w-100 slideInRight" src="<?php echo $domainUrl; ?>/assets/images/projects/3.png" alt="">
-                    <div class="hover-scroll-div">
-                        <p style="margin-top: -30px" class="fn-paragraph-font animatable fadeInUp">Laika Pet Cafe</p>
-                        <p class="fn-paragraph-font animatable fadeInUp">Making you are pet happier</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-6 mb-5">
-                <a  href="<?php echo $domainUrl; ?>/projects/yangon-international-airport.php" data-aos="fade-up" data-aos-duration="1500" class="project-img-control overflow-hidden">
-                    <img class="w-100" src="<?php echo $domainUrl; ?>/assets/images/projects/4.png" alt="">
                     <div class="hover-scroll-div">
                         <p style="margin-top: -30px" class="fn-paragraph-font animatable fadeInUp">Laika Pet Cafe</p>
                         <p class="fn-paragraph-font animatable fadeInUp">Making you are pet happier</p>
@@ -255,19 +229,46 @@
                 </a>
             </div>
             <div class="col-sm-12 col-md-6 mb-5">
-                <div data-aos="fade-up" data-aos-duration="1500" class="project-img-control overflow-hidden">
+                <a href="<?php echo $domainUrl; ?>/projects/ilct.php" data-aos="fade-up" data-aos-duration="1500" class="project-img-control overflow-hidden">
+                    <img class="w-100" src="<?php echo $domainUrl; ?>/assets/images/projects/2.png" alt="">
+                    <div class="hover-scroll-div">
+                        <p style="margin-top: -30px" class="fn-paragraph-font animatable fadeInUp">Laika Pet Cafe</p>
+                        <p class="fn-paragraph-font animatable fadeInUp">Making you are pet happier</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-12 col-md-6 mb-5">
+                <a href="<?php echo $domainUrl; ?>/projects/laika.php" data-aos="fade-up" data-aos-duration="1500" class="project-img-control overflow-hidden">
+                    <img class="w-100 slideInRight" src="<?php echo $domainUrl; ?>/assets/images/projects/3.png" alt="">
+                    <div class="hover-scroll-div">
+                        <p style="margin-top: -30px" class="fn-paragraph-font animatable fadeInUp">Laika Pet Cafe</p>
+                        <p class="fn-paragraph-font animatable fadeInUp">Making you are pet happier</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-12 col-md-6 mb-5">
+                <a href="<?php echo $domainUrl; ?>/projects/yangon-international-airport.php" data-aos="fade-up" data-aos-duration="1500" class="project-img-control overflow-hidden">
+                    <img class="w-100" src="<?php echo $domainUrl; ?>/assets/images/projects/4.png" alt="">
+                    <div class="hover-scroll-div">
+                        <p style="margin-top: -30px" class="fn-paragraph-font animatable fadeInUp">Making you are happier</p>
+                        <p class="fn-paragraph-font animatable fadeInUp">Yangon International Airport</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-12 col-md-6 mb-5">
+                <a href="<?php echo $domainUrl; ?>/projects/havana.php" data-aos="fade-up" data-aos-duration="1500" class="project-img-control overflow-hidden">
                     <img class="w-100" src="<?php echo $domainUrl; ?>/assets/images/projects/5.png" alt="">
                     <div class="hover-scroll-div">
                         <p style="margin-top: -30px" class="fn-paragraph-font animatable fadeInUp">Laika Pet Cafe</p>
                         <p class="fn-paragraph-font animatable fadeInUp">Making you are pet happier</p>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="col-sm-12 col-md-6 mb-5">
                 <a href="<?php echo $domainUrl; ?>/projects/prime-automotive.php" data-aos="fade-up" data-aos-duration="1500" class="project-img-control overflow-hidden">
                     <img class="w-100" src="<?php echo $domainUrl; ?>/assets/images/projects/6.png" alt="">
                     <div class="hover-scroll-div">
-                        <p style="margin-top: -30px" class="fn-paragraph-font animatable fadeInUp">Laika Pet Cafe</p>
+                        <p style="margin-top: -30px" class="fn-paragraph-font animatable fadeInUp">Prime Automotive</p>
                         <p class="fn-paragraph-font animatable fadeInUp">Making you are pet happier</p>
                     </div>
                 </a>
@@ -359,13 +360,13 @@
 
 
     // Example 2 - Scroll into View
-    new countUp.CountUp("count", 200, { enableScrollSpy: true });
+    new countUp.CountUp("count", 100, { enableScrollSpy: true });
     new countUp.CountUp("count2", 500, { enableScrollSpy: true });
     new countUp.CountUp("count3", 10, { enableScrollSpy: true });
 
-    new countUp.CountUp("count4", 20, { enableScrollSpy: true });
-    new countUp.CountUp("count5", 999, { enableScrollSpy: true });
-    new countUp.CountUp("count6", 10, { enableScrollSpy: true });
+    new countUp.CountUp("count4", 5, { enableScrollSpy: true });
+    new countUp.CountUp("count5", 400, { enableScrollSpy: true });
+    new countUp.CountUp("count6", 999, { enableScrollSpy: true });
 
     let canvasInner = $('.particles-js-canvas-el').html();
     $('.particles-js-canvas-el').prepend(`<div class="col-12">${canvasInner}</div>`);

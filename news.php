@@ -28,7 +28,7 @@
 <?php include 'layouts/header.php'; ?>
 
 <section  class="theme-container  d-flex">
-    <div class="container-fluid px-0 mx-0" >
+    <div class="container-fluid " >
         <div class="row" style="margin: 20% 0;" >
             <div class="col-md-6 col-lg-6 col-sm-12 px-0 mx-0 once-text-content-append" >
                 <p style="height: 50px;" class="once-type fn-title-font typedtext"></p>

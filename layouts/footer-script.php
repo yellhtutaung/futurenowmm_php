@@ -30,7 +30,8 @@
     // $('.set-mt-row-content').css({paddingTop:finalRes}); // 20 margin bottom
 
 
-    if (screen.width < 600) {
+    // alert(screen.width);
+    if (screen.width < 915) {
         $('.hide-mobile').addClass("d-none");
         $('.hambager-div').removeClass("d-none");
     }

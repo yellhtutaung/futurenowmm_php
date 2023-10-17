@@ -1,56 +1,25 @@
 <?php include '../includes/functions.php'; ?>
 <?php include '../layouts/head.php'; ?>
 <link rel="stylesheet" href="<?php echo $domainUrl; ?>/assets/css/typing-animation.css">
-
-<style>
-    .universal-img-container
-    {
-        width: 100%;
-        height: auto;
-        overflow: hidden;
-    }
-    .click-details-footer
-    {
-        width: 86%;
-        height: 80px;
-        margin: 0 auto !important;
-        position: fixed;
-        bottom: 0;
-        /*border: 1px solid white;*/
-        background: linear-gradient(360deg, #000 0%, rgba(0, 0, 0, 0.00) 100%);
-    }
-    .project-overlay
-    {
-        /*height: 1080px;*/
-        width: 100%;
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        background-color: black;
-        overflow-x: hidden;
-        transition: 0.5s;
-        z-index: 999;
-    }
-</style>
 <body>
 <?php include '../layouts/header.php'; ?>
 
 <section class="theme-container  d-flex">
     <div class="container-fluid px-0 mx-0">
-        <div id="scroll-up-div" class="row" style="margin: 18% 0 18% 0;" >
+        <div id="scroll-up-div" class="row" style="margin: 20% 0;" >
             <div class="col-md-6 col-lg-6 col-sm-12 px-0 mx-0 once-text-content-append" >
-                <p style="height: 50px;" class="once-type fn-title-font typedtext"></p>
-                <p class=" fn-paragraph-font">Largest Airport in Myanmar</p>
+                <p class="once-type fn-title-font typedtext"></p>
+                <p class="fn-paragraph-font">Largest Airport in Myanmar</p>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-6">
-                <div class="row mt-4">
-                    <div class="col-sm-6 col-md-8">
-                        <p class="text-white fn-paragraph-font text-right opacity-05">Work</p>
-                        <p class="text-white fn-paragraph-font text-right">Brand Identity</p>
+                <div class="row detail-works-sm-margin">
+                    <div class="col-sm-6 col-md-8 pb-sm-5 px-0 mx-0">
+                        <p class="mb-0 text-white fn-paragraph-font text-right opacity-05">Work</p>
+                        <p class="mb-0 text-white fn-paragraph-font text-right">Printing Design</p>
                     </div>
-                    <div class="col-sm-6 col-md-4">
-                        <p class="text-white fn-paragraph-font text-right opacity-05">Industry</p>
-                        <p class="text-white fn-paragraph-font text-right">Auto mobile</p>
+                    <div class="col-sm-6 col-md-4 sm-top-divider px-0 mx-0">
+                        <p class="mb-0 text-white fn-paragraph-font text-right opacity-05">Industry</p>
+                        <p class="mb-0 text-white fn-paragraph-font text-right">Transportation</p>
                     </div>
                 </div>
             </div>
@@ -58,20 +27,20 @@
     </div>
 </section>
 
-<section class="theme-container">
-    <div class="universal-img-container">
+<section class="theme-container" id="get-gallery-div">
+    <div class="universal-img-container" data-aos="fade-up" data-aos-duration="1500">
         <img class="w-100 h-auto" src="<?php echo $domainUrl; ?>/assets/images/projects/airport/1.jpg" alt="">
     </div>
-    <div class="universal-img-container">
+    <div class="universal-img-container mt-4" data-aos="fade-up" data-aos-duration="1500" >
         <img class="w-100 h-auto" src="<?php echo $domainUrl; ?>/assets/images/projects/airport/2.jpg" alt="">
     </div>
-    <div class="row">
-        <div class="col-sm-12 col-md-6 mt-4">
+    <div class="row my-4">
+        <div class="col-sm-12 col-md-6">
             <div class="universal-img-container"  data-aos="fade-up" data-aos-duration="1500">
                 <img class="w-100 h-auto" src="<?php echo $domainUrl; ?>/assets/images/projects/airport/3.jpg" alt="">
             </div>
         </div>
-        <div class="col-sm-12 col-md-6 mt-4">
+        <div class="col-sm-12 col-md-6">
             <div class="universal-img-container"  data-aos="fade-up" data-aos-duration="1500">
                 <img class="w-100 h-auto" src="<?php echo $domainUrl; ?>/assets/images/projects/airport/4.jpg" alt="">
             </div>
@@ -95,7 +64,6 @@
     <div class="universal-img-container mt-4" data-aos="fade-up" data-aos-duration="1500" >
         <img class="w-100 h-auto" src="<?php echo $domainUrl; ?>/assets/images/projects/airport/8.jpg" alt="">
     </div>
-
     <p data-aos="fade-up" data-aos-duration="1500" class="text-center animatable fadeInUp" style="margin: 200px 0 200px 0; text-decoration: underline;">
         <a class="text-white fn-paragraph-font " href="<?php echo $domainUrl;?>/works.php">Explore our works</a>
     </p>
@@ -111,29 +79,24 @@
         <a href="javascript:void(0);" class="text-white fn-paragraph-font project-overlay-close">Close</a>
         <div class="row" style="margin-top: 150px">
             <div class="col-sm-12 col-md-6">
-                <p class="fn-title-font ">Prime Automotive</p>
+                <p class="fn-title-font ">Yangon International Airport</p>
                 <div class="description-section">
-                    <p class="fn-paragraph-font my-5 opacity-05">PRIME is a leading electric vehicle (EV) distributor company in Myanmar, which specializes in providing environmentally friendly transportation solutions to its customers. To enhance its brand identity, PRIME has initiated a brand identity design project to create a distinctive and recognizable brand image that reflects the company's mission and values.
+                    <p class="fn-paragraph-font my-5 opacity-05">We are excited to present our latest project: the design of a comprehensive profile for Yangon International Airport.
+                        The project aimed to showcase the airport’s unique features, facilities, and services to both domestic and international audiences. The profile served as a visually engaging and informative tool, capturing the essence of Yangon International Airport and highlighting its position as a premier transportation hub in Myanmar.</p>
+                    <p class="fn-paragraph-font my-5 opacity-05">The team at Future Now Design Agency brought their expertise in graphic design, visual communication, and strategic branding to create an exceptional profile that aligned with the airport’s vision and objectives. The project involved a meticulous process of research, conceptualization, and design implementation, resulting in a visually striking and content-rich profile.
                     </p>
-                    <p class="fn-paragraph-font my-5 opacity-05">Design Brief:
-                        PRIME's brand identity design project aims to create a unique and modern visual identity that reflects the company's core values of innovation, sustainability, and reliability. The project includes designing a new logo, color palette, typography, and brand guidelines to be used across all of the company's marketing and communication materials.</p>
-                    <p class="fn-paragraph-font my-5 opacity-05">PRIME is a leading electric vehicle (EV) distributor company in Myanmar, which specializes in providing environmentally friendly transportation solutions to its customers. To enhance its brand identity, PRIME has initiated a brand identity design project to create a distinctive and recognizable brand image that reflects the company's mission and values.
-                    </p>
-                    <p class="fn-paragraph-font my-5 opacity-05">PRIME is a leading electric vehicle (EV) distributor company in Myanmar, which specializes in providing environmentally friendly transportation solutions to its customers. To enhance its brand identity, PRIME has initiated a brand identity design project to create a distinctive and recognizable brand image that reflects the company's mission and values.
-                    </p>
-                    <p class="fn-paragraph-font my-5 opacity-05">PRIME is a leading electric vehicle (EV) distributor company in Myanmar, which specializes in providing environmentally friendly transportation solutions to its customers. To enhance its brand identity, PRIME has initiated a brand identity design project to create a distinctive and recognizable brand image that reflects the company's mission and values.
-                    </p>
+                    <p class="fn-paragraph-font my-5 opacity-05">By partnering with Future Now, Yangon International Airport received a professionally crafted profile that captured the airport’s essence, communicated its unique features, and enhanced its brand image. The profile served as a powerful marketing tool, promoting the airport to potential travelers, airlines, and business partners.</p>
                 </div>
             </div>
             <div class="col-sm-12 col-md-6">
                 <div class="row" style="margin-top: 100px">
                     <div class="col-sm-6 col-md-8">
                         <p class="text-white fn-paragraph-font text-right opacity-05">Work</p>
-                        <p class="text-white fn-paragraph-font text-right">Brand Identity</p>
+                        <p class="text-white fn-paragraph-font text-right">Printing Design</p>
                     </div>
                     <div class="col-sm-6 col-md-4">
                         <p class="text-white fn-paragraph-font text-right opacity-05">Industry</p>
-                        <p class="text-white fn-paragraph-font text-right">Auto mobile</p>
+                        <p class="text-white fn-paragraph-font text-right">Transportation</p>
                     </div>
                 </div>
             </div>
@@ -170,12 +133,14 @@
         $('.project-overlay').css('height','0%');
     });
 
+    let getGalleryDivHeight = $("#get-gallery-div").height();
+    getGalleryDivHeight = getGalleryDivHeight - 200;
     const updateScroll = () =>
     {
         let scrollLocation = $(window).scrollTop();
         let scrollLocationCeil = Math.ceil(scrollLocation);
         // console.log(scrollLocationCeil);
-        if (scrollLocationCeil >= 3950)
+        if (scrollLocationCeil >= getGalleryDivHeight)
         {
             $('.click-details-footer').removeClass("d-flex");
             $('.click-details-footer').addClass("d-none");
@@ -192,7 +157,7 @@
         'Yangon International Airport']); // That u want to show on typing content
     setTimeout(function (){
         $('.once-type').remove();
-        $('.once-text-content-append').prepend(`<p style="height: 50px;" class="once-type fn-title-font" >Yangon International Airport</p>`)
+        $('.once-text-content-append').prepend(`<p class="once-type fn-title-font" >Yangon International Airport</p>`)
     },3000);
 
 </script>

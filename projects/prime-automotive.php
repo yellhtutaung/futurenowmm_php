@@ -1,56 +1,25 @@
 <?php include '../includes/functions.php'; ?>
 <?php include '../layouts/head.php'; ?>
 <link rel="stylesheet" href="<?php echo $domainUrl; ?>/assets/css/typing-animation.css">
-
-<style>
-    .universal-img-container
-    {
-        width: 100%;
-        height: auto;
-        overflow: hidden;
-    }
-    .click-details-footer
-    {
-        width: 86%;
-        height: 80px;
-        margin: 0 auto !important;
-        position: fixed;
-        bottom: 0;
-        /*border: 1px solid white;*/
-        background: linear-gradient(360deg, #000 0%, rgba(0, 0, 0, 0.00) 100%);
-    }
-    .project-overlay
-    {
-        /*height: 1080px;*/
-        width: 100%;
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        background-color: black;
-        overflow-x: hidden;
-        transition: 0.5s;
-        z-index: 999;
-    }
-</style>
 <body>
 <?php include '../layouts/header.php'; ?>
 
 <section class="theme-container  d-flex">
     <div class="container-fluid px-0 mx-0">
-        <div id="scroll-up-div" class="row" style="margin: 18% 0 18% 0;" >
+        <div id="scroll-up-div" class="row" style="margin: 20% 0;" >
             <div class="col-md-6 col-lg-6 col-sm-12 px-0 mx-0 once-text-content-append" >
-                <p style="height: 50px;" class="once-type fn-title-font typedtext"></p>
+                <p class="once-type fn-title-font typedtext"></p>
                 <p class=" fn-paragraph-font">Industry Leading EV distributor in Myanmar.</p>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-6">
-                <div class="row mt-4">
-                    <div class="col-sm-6 col-md-8">
-                        <p class="text-white fn-paragraph-font text-right opacity-05">Work</p>
-                        <p class="text-white fn-paragraph-font text-right">Brand Identity</p>
+                <div class="row detail-works-sm-margin">
+                    <div class="col-sm-6 col-md-8 pb-sm-5 px-0 mx-0">
+                        <p class="mb-0 text-white fn-paragraph-font text-right opacity-05">Work</p>
+                        <p class="mb-0 text-white fn-paragraph-font text-right">Brand Identity</p>
                     </div>
-                    <div class="col-sm-6 col-md-4">
-                        <p class="text-white fn-paragraph-font text-right opacity-05">Industry</p>
-                        <p class="text-white fn-paragraph-font text-right">Auto mobile</p>
+                    <div class="col-sm-6 col-md-4 sm-top-divider px-0 mx-0">
+                        <p class="mb-0 text-white fn-paragraph-font text-right opacity-05">Industry</p>
+                        <p class="mb-0 text-white fn-paragraph-font text-right">Auto mobile</p>
                     </div>
                 </div>
             </div>
@@ -58,7 +27,7 @@
     </div>
 </section>
 
-<section class="theme-container">
+<section class="theme-container" id="get-gallery-div">
     <div class="universal-img-container">
         <img class="w-100 h-auto" src="<?php echo $domainUrl; ?>/assets/images/projects/6.png" alt="">
     </div>
@@ -169,12 +138,14 @@
         $('.project-overlay').css('height','0%');
     });
 
+    let getGalleryDivHeight = $("#get-gallery-div").height();
+    getGalleryDivHeight = getGalleryDivHeight - 200;
     const updateScroll = () =>
     {
         let scrollLocation = $(window).scrollTop();
         let scrollLocationCeil = Math.ceil(scrollLocation);
         // console.log(scrollLocationCeil);
-        if (scrollLocationCeil >= 5000)
+        if (scrollLocationCeil >= getGalleryDivHeight)
         {
             $('.click-details-footer').removeClass("d-flex");
             $('.click-details-footer').addClass("d-none");
@@ -191,8 +162,8 @@
         'Prime Automotive']); // That u want to show on typing content
     setTimeout(function (){
         $('.once-type').remove();
-        $('.once-text-content-append').prepend(`<p style="height: 50px;" class="once-type fn-title-font" >Prime Automotive</p>`)
-    },3000);
+        $('.once-text-content-append').prepend(`<p class="once-type fn-title-font" >Prime Automotive</p>`)
+    },2000);
 
 </script>
 </body>

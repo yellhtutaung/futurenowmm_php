@@ -24,6 +24,25 @@
     .scroll-text1{
         transition: 0.2s;
     }
+    .fn-paragraph-font:hover
+    {
+        text-decoration: underline !important;
+    }
+    .text-black
+    {
+        color: black !important;
+    }
+    .fs-25px
+    {
+        font-size: 25px;
+    }
+    p{
+        margin-bottom: 0!important;
+    }
+    .my-sm-5
+    {
+        margin: 25px 0 !important;
+    }
 </style>
 <body>
 <?php include 'layouts/header.php'; ?>
@@ -35,50 +54,58 @@
 </section>
 <div id="contact-info-div" class="theme-container" >
     <div class="row" >
-        <div class="col-md-3 col-sm-12">
-            <h5 class="text-black fs-26px">General Inquries</h5>
-            <a class="text-black op-5 fn-paragraph-font" href="mailto:hello@futurenowmm.com">hello@futurenowmm.com</a>
+        <div class="my-sm-5 col-md-3 col-sm-12">
+            <p class="text-black fs-25px">General Inquries</p>
+            <a class="text-black op-5 fn-paragraph-font opacity-05" href="mailto:hello@futurenowmm.com">hello@futurenowmm.com</a>
         </div>
-        <div class="col-md-3 col-sm-12">
-            <h5 class="text-black fs-26px">Call Us</h5>
-            <a class="text-black op-5 fn-paragraph-font" href="tel:+959884916745" >09884916745</a><br>
-            <a class="text-black op-5 fn-paragraph-font" href="tel:+959895089891" >09895089891</a>
+        <div class="my-sm-5 col-md-3 col-sm-12">
+            <p class="text-black fs-25px">Call Us</p>
+            <a class="text-black op-5 fn-paragraph-font opacity-05" href="tel:+959884916745" >09884916745</a><br>
+            <a class="text-black op-5 fn-paragraph-font opacity-05" href="tel:+959895089891" >09895089891</a>
         </div>
-        <div class="col-md-3 col-sm-12">
-            <h5 class="text-black fs-26px">Follow Us</h5>
+        <div class="my-sm-5 col-md-3 col-sm-12">
+            <p class="text-black fs-25px">Follow Us</p>
             <div class="d-flex">
-                <a class="text-black op-5  fn-paragraph-font" href="">Instagram <img class="target-blank-img" src="assets/images/gallery/target_blank_black.svg" alt=""> &nbsp; </a>
-                <a class="text-black op-5  fn-paragraph-font" href="">LinkIn <img class="target-blank-img" src="assets/images/gallery/target_blank_black.svg" alt=""> &nbsp; </a>
+                <a class="text-black op-5  fn-paragraph-font opacity-05" href="">Instagram <img class="target-blank-img" src="assets/images/gallery/target_blank_black.svg" alt=""> &nbsp; </a>
+                <a class="text-black op-5  fn-paragraph-font opacity-05" href="">LinkedIn <img class="target-blank-img" src="assets/images/gallery/target_blank_black.svg" alt=""> &nbsp; </a>
             </div>
             <div class="d-flex">
-                <a class="text-black op-5 fn-paragraph-font" href="">Facebook <img class="target-blank-img" src="assets/images/gallery/target_blank_black.svg" alt=""> &nbsp; </a>
-                <a class="text-black op-5 fn-paragraph-font" href="">Behance <img class="target-blank-img" src="assets/images/gallery/target_blank_black.svg" alt=""> &nbsp; </a>
+                <a class="text-black op-5 fn-paragraph-font opacity-05" href="">Facebook <img class="target-blank-img" src="assets/images/gallery/target_blank_black.svg" alt=""> &nbsp; </a>
+                <a class="text-black op-5 fn-paragraph-font opacity-05" href="">Behance <img class="target-blank-img" src="assets/images/gallery/target_blank_black.svg" alt=""> &nbsp; </a>
             </div>
         </div>
-        <div class="col-md-3 col-sm-12">
-            <h5 class="text-black fs-26px">Visit</h5>
+        <div class="my-sm-5 col-md-3 col-sm-12">
+            <p class="text-black fs-25px">Visit Us (Appointment Only)</p>
 
-            <div class="mt-3">
-                <p class="mb-0 pb-0 op-5 fn-paragraph-font" style="color: black;">M Tower, 15th Floor,</p>
-                <p class="my-0 py-0 op-5 fn-paragraph-font" style="color: black;">Kamayut, Yangon.</p>
+            <div class="mt-3 ">
+                <a target="_blank" href="https://maps.app.goo.gl/B8iNgeV55oZ9jSZf9" class="mb-0 pb-0 op-5 fn-paragraph-font opacity-05" style="color: black;">70 B1/A Golden Valley Avenue Street | Bahan, Yangon.</a>
+<!--                <p class="my-0 py-0 op-5 fn-paragraph-font" style="color: black;"></p>-->
             </div>
+            <div class="my-2 address-placement-for-mobile" ></div>
 
         </div>
     </div>
     <div class="row mt-3">
         <div class="col-sm-6 col-md-6">
-            <h5 class="text-black fs-26px">Work Hard</h5>
-            <p style="color: black;" class="fn-paragraph-font">Mon to Fri ( 9am to 5pm )</p>
+            <div class="row">
+                <div class="col-md-6 col-sm-6 my-sm-5">
+                    <p class="text-black fs-25px">Work Hard</p>
+                    <p style="color: black;" class="fn-paragraph-font opacity-05">Mon to Fri ( 9am to 5pm )</p>
+                </div>
+                <div class="col-md-6 col-sm-6 my-sm-5">
+                    <p class="text-black fs-25px">Feedback</p>
+                    <a style="color: black;" href="mailto:help@futurenowmm.com" class="fn-paragraph-font opacity-05">help@futurenowmm.com</a>
+                </div>
+            </div>
         </div>
         <div class="col-sm-6 col-md-6">
             <div class="row">
                 <div class="col-6">
-                    <h5 class="text-black fs-26px">Feedback</h5>
-                    <p style="color: black;" class="fn-paragraph-font">help@futurenowmm.com</p>
+<!--                    <p class="text-black fs-25px">Feedback</h5>-->
+<!--                    <p style="color: black;" class="fn-paragraph-font">help@futurenowmm.com</p>-->
                 </div>
-                <div class="col-6">
-                    <p class="mb-0 pb-0 op-5 fn-paragraph-font" style="color: black;">Times city complex,</p>
-                    <p class="my-0 py-0 op-5 fn-paragraph-font" style="color: black;">Building 401, 2nd Fl, Yangon.</p>
+                <div class="col-6 get-for-mobile">
+                    <a href="https://www.google.com/maps/search/times+city+complex/@16.8167091,96.1269097,17.57z?entry=ttu" target="_blank" class="mb-0 pb-0 op-5 fn-paragraph-font opacity-05" style="color: black;">Times city complex, Building 401 | Kamayut ,Yangon.</a>
                 </div>
             </div>
 
@@ -97,6 +124,8 @@
 <!--    <script src="--><?php //echo $domainUrl; ?><!--/assets/js/particles-setup.js" ></script>-->
 
 <script>
+
+    $('.bar').css({"background":"black"});
 
     let getScrollStop = 0;
     let getAllStyle = $('.once-type').attr("style");
@@ -128,7 +157,17 @@
         $('a').removeClass("text-white");
         $('a').css("color","black");
         $('.header-logo').attr("src","assets/images/logo/fn-logo-black.svg");
-        $('#text-box-height').css("height",getTextBoxHeight());
+
+        if(screen.width >= 767 )
+        {
+            $('#text-box-height').css("height",getTextBoxHeight());
+        }else {
+            $('#text-box-height').css("height","300px");
+            let getForMobile = $('.get-for-mobile').html();
+            console.log(getForMobile);
+            $('.address-placement-for-mobile').append(getForMobile);
+            $('.get-for-mobile').remove();
+        }
 
     });
 
@@ -156,7 +195,10 @@
 
     }
 
-    $(window).on('scroll', updateScroll);
+    if(screen.width >= 767 )
+    {
+        $(window).on('scroll', updateScroll);
+    }
     // $('footer').css({"position": "fixed","bottom": "0","right": "0", "left":"0"});
 
     $('footer').css('background','');
